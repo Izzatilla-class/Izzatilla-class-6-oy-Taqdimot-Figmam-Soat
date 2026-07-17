@@ -1,11 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
+      <link
       href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
@@ -25,59 +24,41 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  </head>
-  <body>
-
-
-    <div class="load mx-auto">
-      <div class="cloader">
-  <div class="clface">
-    <div class="clsface">
-      <div id="h2" class="hand"></div>
-    </div>
-    <div class="top"></div>
-    <div class="bottom"></div>
-    <div class="left"></div>
-    <div class="right"></div>
-    <div id="sub" class="pin"></div>
-    <div id="h1" class="hand"></div>
-    <div id="main" class="pin"></div>
-  </div>
-</div>
-    </div>
-
-
+</head>
+<body>
     
-    <header class="nav py-[30px] fixed top-0 left-0 w-full z-50">
+
+
+        <header class="nav py-[30px] fixed top-0 left-0 w-full z-50">
       <div class="max-w-[1120px] mx-auto w-full px-[30px]">
         <div class="flex items-center justify-between gap-[20px]">
           <div>
-            <img src="./Container.svg" width="107" alt="" />
+            <img src="../Container.svg" width="107" alt="" />
           </div>
 
           <div class="text-white max-[896px]:hidden">
             <ul class="flex items-center gap-[40px]">
               <li class="inline-block group relative">
-                <a class="pb-0" href="">BOSH SAHIFA</a>
+                <a class="pb-0" href="../index.html">BOSH SAHIFA</a>
                 <span
                   class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
                 ></span>
               </li>
               <li class="inline-block group relative">
                 <a class="pb-0" href="">KATALOG</a>
-                <span
+                  <span
                   class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
                 ></span>
               </li>
               <li class="inline-block group relative">
                 <a class="pb-0" href="">BIZ HAQIMIZDA</a>
-                <span
+                  <span
                   class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
                 ></span>
               </li>
               <li class="inline-block group relative">
                 <a class="pb-0" href="">ALOQA</a>
-                <span
+                  <span
                   class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
                 ></span>
               </li>
@@ -85,9 +66,9 @@
           </div>
 
           <div class="flex items-center gap-[20px] max-[896px]:hidden">
-            <img src="./Button.svg" alt="" />
-            <img src="./Button (1).png" alt="" />
-            <img src="./Button (2).png" alt="" />
+            <img src="../Button.svg" alt="" />
+            <img src="../Button (1).png" alt="" />
+            <img src="../Button (2).png" alt="" />
           </div>
 
           <div>
@@ -266,7 +247,7 @@
             <div class="mt-[100px] mb-[20px] p-[20px]">
               <ul class="flex flex-col text-[30px] gap-[20px]">
                 <li class="inline-block group relative">
-                  <a class="pb-0" href="./index.html">BOSH SAHIFA</a>
+                  <a class="pb-0" href="../index.html">BOSH SAHIFA</a>
                   <span
                     class="inline-block absolute top-[52px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-[190px]"
                   ></span>
@@ -296,28 +277,30 @@
             </div>
 
             <div class="flex items-center justify-center gap-[20px]">
-              <img src="./Link.svg" alt="" />
-              <img src="./Link.png" alt="" />
-              <img src="./Link (1).png" alt="" />
+              <img src="../Link.svg" alt="" />
+              <img src="../Link.png" alt="" />
+              <img src="../Link (1).png" alt="" />
             </div>
 
+
             <div class="flex justify-center mt-[30px]">
-              <button
-                data-modal-target="authentication-modal"
-                data-modal-toggle="authentication-modal"
-                class="text-white bg-brand box-border border border-[#EBC166] rounded-[6px] p-[5px] w-[300px]"
-                type="button"
-              >
-                Kirish
-              </button>
+   <button
+              data-modal-target="authentication-modal"
+              data-modal-toggle="authentication-modal"
+              class="text-white  bg-brand box-border border border-[#EBC166] rounded-[6px] p-[5px] w-[300px]"
+              type="button"
+            >
+              Kirish
+            </button>
             </div>
+         
 
             <!-- Main modal -->
             <div
               id="authentication-modal"
               tabindex="-1"
               aria-hidden="true"
-              class="hidden overflow-y-auto bg-[url(./bg.png)] bg-cover bg-center bg-no-repeat overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+              class="hidden overflow-y-auto bg-[url(../bg.png)] bg-cover bg-center bg-no-repeat overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
             >
               <div
                 class="relative p-4 bg-gray-100 rounded-[6px] w-full max-w-md max-h-full"
@@ -434,321 +417,23 @@
       </div>
     </header>
 
-    <main>
-      <section
-        class="py-[170px] bg-[url(./bg.png)] bg-cover bg-center bg-no-repeat h-160"
-      >
-        <div class="max-w-[1120px] mx-auto w-full px-[30px]">
-          <div>
-            <button
-              class="bg-transparent border border-[#EBC166] text-[#EBC166] p-[3px] rounded-[16px] mb-[25px] w-[200px]"
-            >
-              YANGI KOLLEKSIYA 2026
-            </button>
-            <h1
-              class="text-white text-[54px] font-bold max-[565px]:text-[33px]"
-            >
-              Vaqt — eng qimmat <br />
-              boylik
-            </h1>
-            <p class="text-white pt-[18px] text-[18px] font-bold">
-              Shveytsariya soatlari endi O'zbekistonda. Mukammallik va <br />
-              an'analar uyg'unligi har bir soniyada.
-            </p>
-            <div class="flex items-center gap-[20px] my-[20px]">
-              <a href=""
-                ><button
-                  class="bg-[#EBC166] max-[565px]:text-[13px] text-white p-[10px] rounded-[6px] font-bold"
-                >
-                  KATALOGNI KO'RISH
-                </button></a
-              >
-              <a href="./pages/batafsil.html"
-                ><button
-                  class="bg-transparent max-[565px]:text-[13px] border border-[#EBC166] text-[#EBC166] w-[130px] p-[10px] rounded-[6px] font-bold"
-                >
-                  BATAFSIL
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="py-[40px] bg-[#0E0E0C]">
-        <div class="max-w-[1120px] mx-auto w-full px-[30px]">
-          <h2 class="text-[19px] text-[#9A8F7E] pb-[20px] text-center">
-            RASMIY HAMKOR BRENDLAR
-          </h2>
-          <div
-            data-aos="fade-up"
-            class="grid grid-cols-6 gap-[20px] items-center pt-[20px] justify-between max-[560px]:grid-cols-3 max-[560px]:p-[10px] mx-auto"
-          >
-            <img src="./Text.png" alt="" width="100" />
-            <img src="./Container (1).png" alt="" width="100" />
-            <img src="./Container (2).png" alt="" width="100" />
-            <img src="./Container (3).png" alt="" width="100" />
-            <img src="./Text (1).png" alt="" width="100" />
-            <img src="./Container (4).png" alt="" width="100" />
-          </div>
-        </div>
-      </section>
+<main>
+      <section class="py-[170px] bg-[url(../bg.png)] bg-cover bg-center bg-no-repeat h-600">
+<div class="max-w-[1120px] mx-auto w-full px-[30px] text-white p-[20px]">
+    <h1 class="text-center text-white text-[35px] pb-[5px]">Batafsil malumot</h1>
+<p>Bizning soat kompaniyamiz ko'p yillik boy an'analar, yuksak mahorat va vaqtga bo'lgan cheksiz hurmat asosida tashkil topgan. Biz shunchaki vaqtni ko'rsatadigan mexanik jihozlar emas, balki avloddan-avlodga meros bo'lib o'tadigan, har bir detali mukammallik darajasiga yetkazilgan haqiqiy san'at asarlarini yaratamiz. Har bir soatimiz zamonaviy texnologiyalarning eng so'nggi yutuqlari va qadimiy Shveytsariya soatsozlik maktabining eng sara sirlarini o'zida birlashtiradi. Bizning bosh maqsadimiz — har bir mijozimizga o'zining yuksak maqomi va nafis didini namoyon etishiga yordam berishdir.</p>
+<p>Kompaniyamiz tomonidan taqdim etiladigan har bir model o'ta yuqori aniqlikdagi murakkab mexanizmlar va eng noyob materiallardan tayyorlanadi. Biz ishlab chiqarish jarayonida 18 karatli qizil va oq oltin, zanglamaydigan yuqori sifatli po'lat, yengil titan hamda chizilishga o'ta chidamli bo'lgan qimmatbaho sapfir oynalardan foydalanamiz. Soatlarimizning har bir mayda detali tajribali ustalarimiz tomonidan qo'lda yig'iladi va o'nlab bosqichli sinchkovlik sinovlaridan o'tkaziladi. Biz uchun sifat — bu har bir tishli g'ildirakchaning harakatida, siferblatning porlashida va tasmalarining mayinligida namoyon bo'ladigan mukammallik qonuniyatidir.</p>
+<p>Bizning brendimiz mangu uslub va zamonaviy nafislik timsolidir. Biz dizayn ustida ishlashda klassik simmetriya va bugungi kun estetikasi o'rtasidagi oltin muvozanatni izlaymiz. Bizning soatlarimiz faqatgina rasmiy uchrashuvlar yoki tantanali tadbirlar uchun emas, balki kundalik hayotda ham o'z egasiga o'zgacha joziba va cheksiz ishonch bag'ishlashi uchun loyihalashtirilgan. Siferblatdagi har bir chiziq, har bir raqam va mil o'ziga xos chuqur ma'noga ega bo'lib, ular vaqtning naqadar qadrli ekanligini va uning o'tib borayotgan har bir soniyasining go'zalligini anglatib turadi.</p>
+<p>Kompaniyamiz qadimiy an'analarga sodiq qolgan holda, ilm-fan va innovatsiyalar yaratishdan ham bir soniya ham to'xtamaydi. Bizning muhandislarimiz va dizaynerlarimiz doimiy ravishda soat mexanizmlarining aniqligi va chidamliligini oshirish ustida ilmiy tadqiqotlar olib borishadi. Suv o'tkazmaslik darajasini oshirish, magnit maydonlarining salbiy ta'siriga chidamlilik va mexanizmning quvvat zaxirasini maksimal darajada uzaytirish borasida erishgan yutuqlarimiz bizni jahon bozorida yetakchilar qatoriga olib chiqdi. Biz yaratgan har bir yangi kolleksiya texnologiya va estetikaning yangi cho'qqisi hisoblanadi.</p>
+<p>Biz har bir mijozimiz bilan uzoq muddatli va ishonchli munosabatlar o'rnatishni eng oliy qadriyat deb bilamiz. Bizdan soat sotib olganingizdan so'ng, siz nafaqat qimmatbaho mahsulotga, balki bizning ko'p yillik rasmiy kafolatimiz va professional xizmat ko'rsatishimizga ham ega bo'lasiz. Bizning servis markazlarimizda har qanday murakkablikdagi profilaktika va sozlash ishlari eng yuqori darajada amalga oshiriladi. Biz har bir xaridorimiz o'zini maxsus his qilishini xohlaymiz va shuning uchun ham individual buyurtmalar qabul qilish xizmatini yo'lga qo'yganmiz.</p>
+<p>Vaqt — bu biz ega bo'lgan eng qimmatbaho va qaytarib bo'lmas boylikdir. Uni qanday o'tkazish va qanday o'lchash esa butunlay sizning tanlovingizdir. Bizning soatlarimiz sizga ushbu bebaho boylikni har soniyasini his qilib, uni muvaffaqiyat va baxt bilan to'ldirib yashashingizni eslatib turadi. Biz bilan birga o'z shaxsiy tarixingizni yarating va har bir lahzangizni unutilmas qiling, chunki siz doimo eng yaxshisiga loyiqsiz.</p>
+</div>
+    </section>
+</main>
 
-      <section class="py-[60px] bg-[#0E0E0C]">
-        <div class="max-w-[1120px] mx-auto w-full px-[30px]">
-          <h1 class="text-[48px] pb-[10px] text-[white]">Tanlangan modellar</h1>
-          <img class="pb-[40px]" src="./Background.png" alt="" />
-          <div class="owl-carousel owl-theme">
-            <div
-              class="card item mx-auto max-w-[500px] border border-[#EBC166] rounded-[6px] p-[10px] max-[1090px]:max-w-[400px] max-[755px]:max-w-[550px]"
-            >
-              <img
-                class="pb-[20px] rounded-[6px] w-full"
-                src="./image copy 2.png"
-                alt=""
-              />
-              <p class="text-[16px] text-[#9A8F7E] py-[10px]">
-                VACHERON CONSTANTIN 5.0
-              </p>
-              <h2 class="text-white text-[38px] pb-[20px]">Patrimony Manual</h2>
-              <p class="text-[gold] text-[20px] pb-[10px]">15 200 000 so'm</p>
-              <button
-                class="text-white w-[200px] text-[15px] p-[10px] rounded-[10px] mb-[10px] bg-[gold]"
-              >
-                SAVATGA QO'SHISH
-              </button>
-            </div>
 
-            <div
-              class="card item mx-auto max-w-[500px] border border-[#EBC166] rounded-[6px] p-[10px] max-[1090px]:max-w-[400px]"
-            >
-              <img
-                class="pb-[20px] rounded-[6px] w-full"
-                src="./0c282461355ecf1867bf2b6fa27cc6ba8ccf61c0.jpg"
-                alt=""
-              />
-              <p class="text-[16px] text-[#9A8F7E] py-[10px]">
-                VACHERON CONSTANTIN 5.0
-              </p>
-              <h2 class="text-white text-[38px] pb-[20px]">Patrimony Manual</h2>
-              <p class="text-[gold] text-[20px] pb-[10px]">15 200 000 so'm</p>
-              <button
-                class="text-white w-[200px] text-[15px] p-[10px] rounded-[10px] mb-[10px] bg-[gold]"
-              >
-                SAVATGA QO'SHISH
-              </button>
-            </div>
-
-            <div
-              class="card item mx-auto max-w-[500px] border border-[#EBC166] rounded-[6px] p-[10px] max-[1090px]:max-w-[400px]"
-            >
-              <img
-                class="pb-[20px] rounded-[6px] w-full"
-                src="./d4d24d1389256a1e3eb9b171b125bbe290cd3b47.jpg"
-                alt=""
-              />
-              <p class="text-[16px] text-[#9A8F7E] py-[10px]">
-                VACHERON CONSTANTIN 5.0
-              </p>
-              <h2 class="text-white text-[38px] pb-[20px]">Patrimony Manual</h2>
-              <p class="text-[gold] text-[20px] pb-[10px]">15 200 000 so'm</p>
-              <button
-                class="text-white w-[200px] text-[15px] p-[10px] rounded-[10px] mb-[10px] bg-[gold]"
-              >
-                SAVATGA QO'SHISH
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-[60px] bg-[#0E0E0C]">
-        <div class="max-w-[1120px] mx-auto w-full px-[30px]">
-          <div
-            class="flex items-center justify-between gap-[20px] max-[1120px]:flex-col max-[1120px]:p-[10px]"
-          >
-            <img data-aos="fade-right" src="./Container.png" alt="" />
-
-            <div>
-              <p class="text-[25px] text-[#EBC166] pb-[40px]">
-                SAN'AT DARAJASIDAGI SIFAT
-              </p>
-              <h1
-                class="text-[48px] text-white pb-[40px] max-[500px]:text-[30px]"
-              >
-                Ustalar mahorati — <br />
-                bizning g'ururimiz
-              </h1>
-              <p
-                class="text-[#9A8F7E] text-[16px] pb-[40px] max-[500px]:text-[10px]"
-              >
-                Har bir VAQT soati shunchaki vaqtni ko'rsatuvchi asbob <br />
-                emas, balki asrlar davomida sayqallanib kelgan <br />
-                Shveytsariya ustalari mahoratining mevasidir. Biz har bir <br />
-                detalni sinchkovlik bilan tekshiramiz va faqat eng <br />
-                yaxshilarini sizga taqdim etamiz.
-              </p>
-              <div class="flex items-center gap-[60px] pb-[40px]">
-                <div class="">
-                  <h2 class="text-[#EBC166] text-[24px] pb[10px]">20+ Yil</h2>
-                  <p class="text-[14px] text-[#9A8F7E]">Tajribali ustalar</p>
-                </div>
-
-                <div class="">
-                  <h2 class="text-[#EBC166] text-[24px] pb[10px]">20+ Yil</h2>
-                  <p class="text-[14px] text-[#9A8F7E]">Tajribali ustalar</p>
-                </div>
-              </div>
-              <a href="./pages/koproqbilish.html"
-                ><p
-                  class="pt-[10px] text-[#EBC166] text-[25px] max-[500px]:text-center"
-                >
-                  KO'PROQ BILISH ->
-                </p></a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-[60px] bg-[#0E0E0C]">
-        <div class="max-w-[1120px] mx-auto w-full px-[30px]">
-          <div
-            class="grid grid-cols-3 items-center gap-[20px] max-[905px]:grid-cols-2 max-[905px]:mx-auto max-[905px]:p-[10px] max-[612px]:grid-cols-1 max-[612px]:p-[10px]"
-          >
-            <div
-              data-aos="fade-down"
-              class="max-w-[358px] border border-[#EBC166] rounded-[6px] max-[612px]:mx-auto"
-            >
-              <img class="rounded-[6px]" src="./image copy.png" alt="" />
-              <h2
-                class="text-[32px] text-center py-[10px] font-bold text-white"
-              >
-                Erkaklar soatlari
-              </h2>
-              <a href=""
-                ><p
-                  class="text-[20px] text-center pb-[10px] font-bold text-[#EBC166]"
-                >
-                  KO'RISH ->
-                </p></a
-              >
-            </div>
-
-            <div
-              data-aos="fade-down"
-              class="max-w-[358px] border border-[#EBC166] rounded-[6px] max-[612px]:mx-auto"
-            >
-              <img class="rounded-[6px]" src="./image copy 3.png" alt="" />
-              <h2
-                class="text-[32px] text-center py-[10px] font-bold text-white"
-              >
-                Erkaklar soatlari
-              </h2>
-              <a href=""
-                ><p
-                  class="text-[20px] text-center pb-[10px] font-bold text-[#EBC166]"
-                >
-                  KO'RISH ->
-                </p></a
-              >
-            </div>
-
-            <div
-              data-aos="fade-down"
-              class="max-w-[358px] border border-[#EBC166] rounded-[6px] max-[612px]:mx-auto"
-            >
-              <img
-                width="253"
-                class="rounded-[6px] w-full"
-                src="./image copy 4.png"
-                alt=""
-              />
-              <h2
-                class="text-[32px] text-center py-[10px] font-bold text-white"
-              >
-                Erkaklar soatlari
-              </h2>
-              <a href=""
-                ><p
-                  class="text-[20px] text-center pb-[10px] font-bold text-[#EBC166]"
-                >
-                  KO'RISH ->
-                </p></a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-[60px] bg-[#0E0E0C]">
-        <div class="max-w-[1120px] mx-auto w-full px-[30px]">
-          <h1 class="text-white text-[48px] text-center pb-[10px]">
-            Mijozlarimiz fikri
-          </h1>
-          <p class="text-[#9A8F7E] pb-[59px] text-[18px] text-center pb-[10px]">
-            Bizning xizmatimiz va mahsulotlarimiz haqida real mijozlarimiz
-            tomonidan <br />
-            qoldirilgan izohlar.
-          </p>
-          <div class="grid grid-cols-3 gap-[20px] max-[995px]:grid-cols-2 max-[680px]:grid-cols-1">
-            <div
-              class="max-w-[358px] mx-auto border border-[#9A8F7E] rounded-[6px] p-[15px]"
-            >
-              <p class="py-[10px]">⭐⭐⭐⭐⭐</p>
-              <p class="italic text-[#9A8F7E] pb-[20px] text-[12px]">
-                "VAQT do'konidan soat xarid qildim va kutilganidan ham a'lo
-                sifatga ega bo'ldim. Xizmat ko'rsatish darajasi juda yuqori."
-              </p>
-              <div class="flex items-center gap-[15px]">
-                <img src="./Background+Border (2).png" alt="" />
-                <div>
-                  <p class="text-white text-[15px] pb-[4px]">Aziz Karimov</p>
-                  <p class="text-[#9A8F7E] text-[9px]">TADBIRKOR</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="max-w-[358px] mx-auto border border-[#9A8F7E] rounded-[6px] p-[15px]"
-            >
-              <p class="py-[10px]">⭐⭐⭐⭐⭐</p>
-              <p class="italic text-[#9A8F7E] pb-[20px] text-[12px]">
-                "Ayolim uchun tug'ilgan kuniga sovg'a tanlashda yordam berishdi.
-                Juda nafis va eksklyuziv model. Katta rahmat!"
-              </p>
-              <div class="flex items-center gap-[15px]">
-                <img src="./Background+Border (1).png" alt="" />
-                <div>
-                  <p class="text-white text-[15px] pb-[4px]">Malika Yusupova</p>
-                  <p class="text-[#9A8F7E] text-[9px]">DIZAYNER</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="max-w-[358px] mx-auto border border-[#9A8F7E] rounded-[6px] p-[15px]"
-            >
-              <p class="py-[10px]">⭐⭐⭐⭐⭐</p>
-              <p class="italic text-[#9A8F7E] pb-[20px] text-[12px]">
-                "Haqiqiy mexanik soat ishqibozlari uchun eng yaxshi joy.
-                Assortiment juda boy va soatlar haqiqatdan ham original."
-              </p>
-              <div class="flex items-center gap-[15px]">
-                <img src="./Background+Border (3).png" alt="" />
-                <div>
-                  <p class="text-white text-[15px] pb-[4px]">
-                    Jasur Toshpo'latov
-                  </p>
-                  <p class="text-[#9A8F7E] text-[9px]">MUHANDIS</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -774,12 +459,5 @@
         },
       });
     </script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 3000,
-      });
-    </script>
-  </body>
+</body>
 </html>
