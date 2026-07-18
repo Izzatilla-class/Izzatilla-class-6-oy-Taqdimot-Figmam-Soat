@@ -1,167 +1,189 @@
-.nav{
-    background-color: rgba(0, 0, 0, 0.742); 
+.nav {
+  background-color: rgba(0, 0, 0, 0.742);
 }
 
-
-.alo{
-      backdrop-filter: blur(12px);
-    background-color: rgba(0, 0, 0, 0.626); 
-}
-
-.login{
+.alo {
   backdrop-filter: blur(12px);
-     background-color: rgba(0, 0, 0, 0.685); 
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.626);
 }
 
+.alo1 {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.269);
+}
 
+.login {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.685);
+}
 
 .cloader {
   width: 10em;
   height: 10em;
-  border: 4px solid white;
+  border: 4px solid rgb(255, 255, 255);
   border-radius: 50%;
   margin: 50px auto;
   position: relative;
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 .clface {
   position: relative;
   width: 100%;
   height: 100%;
-  transform: translateY(-3px);
 }
 
 .top {
   height: 10px;
   width: 4px;
-  content: '';
-  background-color: white;
-  border-radius: 5em;
-  margin-top: -30px;
-  margin-left: 42px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .bottom {
   height: 10px;
   width: 4px;
-  content: '';
-  background-color: white;
-  border-radius: 5em;
-  margin-top: 135px;
-  margin-left: 42px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .left {
   height: 4px;
   width: 10px;
-  content: '';
-  background-color: white;
-  border-radius: 5em;
-  margin-top: -82px;
-  margin-left: 112px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .right {
   height: 4px;
   width: 10px;
-  content: '';
-  background-color: white;
-  border-radius: 5em;
-  margin-top: -4px;
-  margin-left: -35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .clsface {
   position: absolute;
   width: 40px;
   height: 40px;
-  margin-left: 24px;
-  margin-top: 15px;
-  border-radius: 6em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
   border: 2px solid #636363;
 }
 
 .hand {
-  width: 65%;
-  height: 4px;
-  background-color: white;
-  border-radius: 3em;
-  border: none;
+  width: 4px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
   position: absolute;
-  top: 85%;
-  left: -15%;
-  transform-origin: 100%;
-  transform: rotate(90deg);
-}
-
-.pin {
-  width: 25%;
-  height: 25%;
-  border-radius: 50%;
-  background: white;
-  position: absolute;
-  top: 86%;
+  bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#sub {
-  width: 10%;
-  height: 10%;
-  border-radius: 50%;
-  background: #636363;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform-origin: bottom center;
 }
 
 #h1 {
-  animation: rotate 4s linear infinite;
+  height: 45px;
+  margin-left: -2px;
+  animation: rotate-hand 4s linear infinite;
 }
 
 #h2 {
-  width: 45%;
-  left: 5%;
-  top: 45%;
+  height: 15px;
+  margin-left: -2px;
   background-color: #636363;
-  animation: rotate 1s linear infinite;
+  animation: rotate-hand 1s linear infinite;
 }
 
-@keyframes rotate {
+.pin {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#sub {
+  width: 6px;
+  height: 6px;
+  background: #636363;
+  z-index: 3;
+}
+
+@keyframes rotate-hand {
   from {
-    transform: rotate(90deg);
+    transform: translate(-50%, 0) rotate(0deg);
   }
-
   to {
-    transform: rotate(450deg);
+    transform: translate(-50%, 0) rotate(360deg);
   }
 }
 
-.load{
+.load {
   background-color: black;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 10;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: ochir 4s forwards;
+  pointer-events: none;
 }
 
 @keyframes ochir {
-  0%{
+  0% {
     opacity: 1;
-  }50%{
-    opacity: 1;
-  }95%{
-    opacity: 0.5;
-  }100%{
-    opacity: 0;
-    z-index: -1;
+    visibility: visible;
   }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.card1 {
+  transition: all 0.7s linear;
+}
+
+.card1:hover {
+  transform: scale(1.09);
+  cursor: pointer;
 }
