@@ -1,1 +1,1 @@
-# 6-oy-taqdimot-figmam
+# Izzatilla-class-6-oy-Taqdimot-Figmam-Soat
