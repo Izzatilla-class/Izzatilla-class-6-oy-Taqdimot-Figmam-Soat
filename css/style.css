@@ -500,11 +500,10 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .heart-container .svg-celebrate {
-  position: absolute;
-  animation: keyframes-svg-celebrate .5s;
+
+
   animation-fill-mode: forwards;
   display: none;
-  stroke: var(--heart-color);
   fill: var(--heart-color);
   stroke-width: 2px;
 }
@@ -548,3 +547,9 @@ input[type="range"]::-webkit-slider-thumb {
     display: none;
   }
 }
+
+
+.ul-tabs img{
+  cursor: pointer;
+}
+
