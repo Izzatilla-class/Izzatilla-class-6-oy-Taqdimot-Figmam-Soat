@@ -1,0 +1,2118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="nav py-[30px] fixed top-0 left-0 w-full z-50">
+      <div class="max-w-[1200px] mx-auto w-full px-[30px]">
+        <div class="flex items-center justify-between gap-[20px]">
+          <div>
+            <img src="../images/vaqt.svg" width="107" alt="" />
+          </div>
+
+          <div class="text-white max-[896px]:hidden">
+            <ul class="flex items-center gap-[40px]">
+              <li class="inline-block group relative">
+                <a class="pb-0" href="../index.html">BOSH SAHIFA</a>
+                <span
+                  class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
+                ></span>
+              </li>
+              <li class="inline-block group relative">
+                <a class="pb-0" href="../pages/katalog.html">KATALOG</a>
+                <span
+                  class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
+                ></span>
+              </li>
+              <li class="inline-block group relative">
+                <a class="pb-0" href="../pages/bog'lanish.html"
+                  >BIZ HAQIMIZDA</a
+                >
+                <span
+                  class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
+                ></span>
+              </li>
+              <li class="inline-block group relative">
+                <a class="pb-0" href="">ALOQA</a>
+                <span
+                  class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
+                ></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex items-center gap-[20px] max-[896px]:hidden">
+            <img src="../images/Button.svg" alt="" />
+            <img src="../images/Button (1).png" alt="" />
+            <a href="../pages/savat.html"
+              ><img src="../images/Button (2).png" alt=""
+            /></a>
+          </div>
+
+          <div>
+            <!-- Modal toggle -->
+            <button
+              data-modal-target="authentication-modal"
+              data-modal-toggle="authentication-modal"
+              class="text-white max-[895px]:hidden bg-brand box-border border border-[#EBC166] rounded-[6px] p-[5px] w-[100px]"
+              type="button"
+            >
+              Kirish
+            </button>
+
+            <!-- Main modal -->
+            <div
+              id="authentication-modal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="hidden overflow-y-auto alo2 white h-full bg-cover bg-center bg-no-repeat overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            >
+              <div
+                class="login relative mx-[10px] bg-gray-900 text-white rounded-[6px] w-full max-w-md max-h-full"
+              >
+                <!-- Modal content -->
+                <div
+                  class="relative bg-neutral-primary-soft rounded-base shadow-sm p-4 md:p-6"
+                >
+                  <!-- Modal header -->
+                  <div
+                    class="flex items-center justify-between border-b border-default pb-4 md:pb-5"
+                  >
+                    <h3 class="text-lg font-medium text-heading">Kirish</h3>
+                    <button
+                      type="button"
+                      class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                      data-modal-hide="authentication-modal"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18 17.94 6M18 18 6.06 6"
+                        />
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <form action="#" class="pt-4 md:pt-6">
+                    <div class="mb-4">
+                      <label
+                        for="email"
+                        class="block mb-2.5 text-sm font-medium text-heading"
+                        >Emailingizni Kiriting</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        class="bg-neutral-secondary-medium border border-default-medium text-heading text-black text-sm rounded-[6px] focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                        placeholder="example@company.com"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="password"
+                        class="block mb-2.5 text-sm font-medium text-heading"
+                        >Parolni Kiriting</label
+                      >
+                      <input
+                        type="password"
+                        id="password"
+                        class="bg-neutral-secondary-medium text-black border border-default-medium text-heading text-sm rounded-[6px] focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                        placeholder="•••••••••"
+                        required
+                      />
+                    </div>
+                    <div class="flex items-start my-6">
+                      <div class="flex items-center">
+                        <input
+                          id="checkbox-remember"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 text-black border border-default-medium bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft"
+                        />
+                        <label
+                          for="checkbox-remember"
+                          class="ms-2 text-sm font-medium text-heading"
+                          >Tasdiqlang</label
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        class="ms-auto text-sm font-medium text-fg-brand hover:underline"
+                        >Parol esingizdan chiqdimi?</a
+                      >
+                    </div>
+                    <button
+                      type="submit"
+                      class="text-black bg-white box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-[6px] text-sm px-4 py-2.5 focus:outline-none w-full mb-3"
+                    >
+                      Login bilan kirish
+                    </button>
+                    <div class="text-sm font-medium text-body">
+                      Akkauntsiz foydalanish<a
+                        href="#"
+                        class="text-fg-brand hover:underline"
+                        >.</a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- drawer init and toggle -->
+          <div class="text-center hidden rotate-[90deg] max-[895px]:block">
+            <button
+              class="font-bold text-[25px] items-center justify-center text-white"
+              type="button"
+              data-drawer-target="drawer-left-example"
+              data-drawer-show="drawer-left-example"
+              data-drawer-placement="left"
+              aria-controls="drawer-left-example"
+            >
+              |||
+            </button>
+          </div>
+
+          <!-- drawer component -->
+          <div
+            id="drawer-left-example"
+            class="alo fixed top-0 text-white left-0 z-40 h-screen bg-black p-4 overflow-y-auto transition-transform -translate-x-full w-96"
+            tabindex="-1"
+            aria-labelledby="drawer-left-label"
+          >
+            <div class="pb-4 mb-5 flex items-center">
+              <img width="100" src="../images/vaqt.svg" alt="" />
+              <button
+                type="button"
+                data-drawer-hide="drawer-left-example"
+                aria-controls="drawer-left-example"
+                class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                  />
+                </svg>
+                <span class="sr-only">Close menu</span>
+              </button>
+            </div>
+            <div class="mt-[100px] mb-[20px] p-[20px]">
+              <ul class="flex flex-col text-[30px] gap-[20px]">
+                <li class="inline-block group relative">
+                  <a class="pb-0" href="../index.html">BOSH SAHIFA</a>
+                  <span
+                    class="inline-block absolute top-[52px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-[190px]"
+                  ></span>
+                </li>
+
+                <li class="inline-block group relative">
+                  <a class="pb-0" href="../pages/katalog.html">KATALOG</a>
+                  <span
+                    class="inline-block absolute top-[52px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-[130px]"
+                  ></span>
+                </li>
+
+                <li class="inline-block group relative">
+                  <a class="pb-0" href="../pages/bog'lanish.html"
+                    >BIZ HAQIMIZDA</a
+                  >
+                  <span
+                    class="inline-block absolute top-[52px] left-[0px] h-[2px] bg-[orange] duration-[0.8s] w-[0px] group-hover:w-[220px]"
+                  ></span>
+                </li>
+
+                <li class="inline-block group relative">
+                  <a class="pb-0" href="">ALOQA</a>
+                  <span
+                    class="inline-block absolute top-[52px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-[100px]"
+                  ></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex items-center justify-center gap-[20px]">
+              <img src="../images/instagram.svg" alt="" />
+              <img src="../images/ll2.svg" alt="" />
+              <img src="../images/you.svg" alt="" />
+            </div>
+
+            <div class="flex justify-center mt-[30px]">
+              <button
+                data-modal-target="authentication-modal"
+                data-modal-toggle="authentication-modal"
+                class="text-white bg-brand box-border border border-[#EBC166] rounded-[6px] p-[5px] w-[300px]"
+                type="button"
+              >
+                Kirish
+              </button>
+            </div>
+
+            <!-- Main modal -->
+            <div
+              id="authentication-modal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="hidden overflow-y-auto bg-[url(../images/bg.png)] bg-cover bg-center bg-no-repeat overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            >
+              <div
+                class="relative p-4 bg-gray-100 rounded-[6px] w-full max-w-md max-h-full"
+              >
+                <!-- Modal content -->
+                <div
+                  class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6"
+                >
+                  <!-- Modal header -->
+                  <div
+                    class="flex items-center justify-between border-b border-default pb-4 md:pb-5"
+                  >
+                    <h3 class="text-lg font-medium text-heading">Kirish</h3>
+                    <button
+                      type="button"
+                      class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                      data-modal-hide="authentication-modal"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18 17.94 6M18 18 6.06 6"
+                        />
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <form action="#" class="pt-4 md:pt-6">
+                    <div class="mb-4">
+                      <label
+                        for="email"
+                        class="block mb-2.5 text-sm font-medium text-heading"
+                        >Emailingizni Kiriting</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-[6px] focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                        placeholder="example@company.com"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="password"
+                        class="block mb-2.5 text-sm font-medium text-heading"
+                        >Parolni Kiriting</label
+                      >
+                      <input
+                        type="password"
+                        id="password"
+                        class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-[6px] focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                        placeholder="•••••••••"
+                        required
+                      />
+                    </div>
+                    <div class="flex items-start my-6">
+                      <div class="flex items-center">
+                        <input
+                          id="checkbox-remember"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 border border-default-medium bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft"
+                        />
+                        <label
+                          for="checkbox-remember"
+                          class="ms-2 text-sm font-medium text-heading"
+                          >Tasdiqlang</label
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        class="ms-auto text-sm font-medium text-fg-brand hover:underline"
+                        >Parol esingizdan chiqdimi?</a
+                      >
+                    </div>
+                    <button
+                      type="submit"
+                      class="text-white bg-black box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-[6px] text-sm px-4 py-2.5 focus:outline-none w-full mb-3"
+                    >
+                      Login bilan kirish
+                    </button>
+                    <div class="text-sm font-medium text-body">
+                      Akkauntsiz foydalanish<a
+                        href="#"
+                        class="text-fg-brand hover:underline"
+                        >.</a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-center text-[#EBC166] py-[20px] text-[20px]">
+                "Har bir soniya — san'at asari"
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="bg-[#0E0E0C] pt-[150px]">
+        <div class="max-w-[1200px] mx-auto w-full px-[30px]">
+          <div class="flex items-center justify-between max-[1185px]:flex-col">
+            <div class="max-[1185px]:mb-[30px]">
+              <div id="default-tab-content">
+                <div
+                  class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <img
+                    src="../images/rolex.png"
+                    alt=""
+                    class="max-w-[544px] rounded-[12px] max-[605px]:max-w-[330px]"
+                  />
+                </div>
+                <div
+                  class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+                  id="dashboard"
+                  role="tabpanel"
+                  aria-labelledby="dashboard-tab"
+                >
+                  <img
+                    src="../images/Border.png"
+                    alt=""
+                    class="max-w-[544px] rounded-[12px] max-[605px]:max-w-[300px]"
+                  />
+                </div>
+                <div
+                  class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+                  id="settings"
+                  role="tabpanel"
+                  aria-labelledby="settings-tab"
+                >
+                  <img
+                    src="../images/rol3.png"
+                    alt=""
+                    class="max-w-[544px] rounded-[12px] max-[605px]:max-w-[300px]"
+                  />
+                </div>
+                <div
+                  class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+                  id="contacts"
+                  role="tabpanel"
+                  aria-labelledby="contacts-tab"
+                >
+                  <img
+                    src="../images/rolex1.png"
+                    alt=""
+                    class="max-w-[544px] rounded-[12px] max-[605px]:max-w-[300px]"
+                  />
+                </div>
+              </div>
+
+              <div class="p-[10px]">
+                <ul
+                  class="ul-tabs flex items-center gap-[8px] justify-center text-center"
+                  id="default-tab"
+                  data-tabs-toggle="#default-tab-content"
+                  role="tablist"
+                >
+                  <li class="me-2 text-[16px]" role="presentation">
+                    <button
+                      class="inline-block p-4"
+                      id="profile-tab"
+                      data-tabs-target="#profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                    >
+                      <img
+                        src="../images/rolex.png"
+                        class="w-[100px] rounded-[6px] max-[605px]:w-[45px]"
+                        alt=""
+                      />
+                    </button>
+                  </li>
+                  <li class="me-2" role="presentation">
+                    <button
+                      class="inline-block p-4 hover:text-fg-brand hover:border-brand"
+                      id="dashboard-tab"
+                      data-tabs-target="#dashboard"
+                      type="button"
+                      role="tab"
+                      aria-controls="dashboard"
+                      aria-selected="false"
+                    >
+                      <img
+                        class="w-[100px] rounded-[6px] max-[605px]:w-[45px]"
+                        src="../images/Border.png"
+                        alt=""
+                      />
+                    </button>
+                  </li>
+                  <li class="me-2" role="presentation">
+                    <button
+                      class="inline-block p-4 hover:text-fg-brand hover:border-brand"
+                      id="settings-tab"
+                      data-tabs-target="#settings"
+                      type="button"
+                      role="tab"
+                      aria-controls="settings"
+                      aria-selected="false"
+                    >
+                      <img
+                        class="w-[100px] rounded-[6px] max-[605px]:w-[45px]"
+                        src="../images/Border (1).png"
+                        alt=""
+                      />
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button
+                      class="inline-block p-4 hover:text-fg-brand hover:border-brand"
+                      id="contacts-tab"
+                      data-tabs-target="#contacts"
+                      type="button"
+                      role="tab"
+                      aria-controls="contacts"
+                      aria-selected="false"
+                    >
+                      <img
+                        class="w-[100px] rounded-[6px] max-[605px]:w-[45px]"
+                        src="../images/rol5.png"
+                        alt=""
+                      />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="">
+              <h3
+                class="text-[#EBC166] text-[16px] pb-[10px] max-[605px]:text-[14px] max-[605px]:p-[10px]"
+              >
+                ROLEX
+              </h3>
+              <h1
+                class="text-white text-[32px] pb-[16.5px] max-[605px]:text-[25px] max-[605px]:p-[10px]"
+              >
+                Submariner Date 41mm
+              </h1>
+              <div class="flex items-center gap-[13px] max-[605px]:p-[10px]">
+                <img
+                  class="max-[605px]:w-[18px]"
+                  src="../images/yulduz.svg"
+                  alt=""
+                />
+                <img
+                  class="max-[605px]:w-[18px]"
+                  src="../images/yulduz.svg"
+                  alt=""
+                />
+                <img
+                  class="max-[605px]:w-[18px]"
+                  src="../images/yulduz.svg"
+                  alt=""
+                />
+                <img
+                  class="max-[605px]:w-[18px]"
+                  src="../images/yulduz.svg"
+                  alt=""
+                />
+                <img
+                  class="max-[605px]:w-[18px]"
+                  src="../images/yulduz.svg"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="flex items-center mt-[20px] gap-[190px] max-[605px]:gap-[50px] max-[605px]:p-[10px]"
+              >
+                <div>
+                  <h3 class="h3 text-[12px] text-[#A1A1A1]">52 000 000 so'm</h3>
+                  <h2
+                    class="text-[#EBC166] text-[28px] pt-[10px] max-[605px]:text-[25px]"
+                  >
+                    46 800 000 so'm
+                  </h2>
+                </div>
+
+                <div>
+                  <button
+                    class="text-[#4ADE80] mt-[30px] text-[11px] border border-[#4ADE80] bg-[#14532D4D] rounded-[6px] p-[1px] max-[420px]:text-[10px] max-[420px]:mt-[30px]"
+                  >
+                    10% CHEGIRMA
+                  </button>
+                </div>
+              </div>
+
+              <p
+                class="text-[#A1A1A1] pt-[20px] max-[605px]:text-[10px] max-[605px]:p-[10px]"
+              >
+                Dunyodagi eng mashhur sho'ng'inchilar soati. 41 mm li
+                Oystersteel <br />
+                po'lat korpusi, koroziyaga chidamli Cerachrom keramik bezeli va
+                300 <br />
+                metrgacha suv o'tkazmaslik xususiyati bilan ajralib turadi.
+              </p>
+
+              <div class="pt-[25px] max-[605px]:p-[10px]">
+                <p
+                  class="text-white text-[14px] pb-[10px] max-[605px]:text-[10px]"
+                >
+                  Korpus rangi
+                </p>
+                <div class="flex items-center gap-[15px]">
+                  <img
+                    class="max-[605px]:w-[20px]"
+                    src="../images/sariq.svg"
+                    alt=""
+                  />
+                  <img
+                    class="max-[605px]:w-[20px]"
+                    src="../images/oq.svg"
+                    alt=""
+                  />
+                  <img
+                    class="max-[605px]:w-[25px]"
+                    src="../images/qora.svg"
+                    alt=""
+                    width="35"
+                  />
+                </div>
+              </div>
+
+              <div class="pt-[20px] max-[605px]:p-[10px]">
+                <p
+                  class="text-[14px] text-white pb-[10px] max-[420px]:pb-[15px]"
+                >
+                  Tasma
+                </p>
+                <div class="flex items-center gap-[15px]">
+                  <button
+                    class="p-[7px] border border-[#EBC166] rounded-[6px] w-[100px] text-white bg-[#C9A24B1A]"
+                  >
+                    Metal
+                  </button>
+                  <button
+                    class="p-[7px] border border-[#A1A1A1] rounded-[6px] w-[100px] text-white"
+                  >
+                    Metal
+                  </button>
+                </div>
+              </div>
+
+              <div class="pt-[30px] flex items-center gap-[20px]">
+                <button
+                  class="p-[7px] border border-[#EBC166] rounded-[6px] w-[120px] text-white bg-[#C9A24B1A] flex items-center justify-between max-[420px]:w-[50px]"
+                >
+                  <p>-</p>
+                  <p>1</p>
+                  <p>+</p>
+                </button>
+
+                <button
+                  data-modal-target="popup-modal"
+                  data-modal-toggle="popup-modal"
+                  class="p-[7px] border border-[#EBC166] rounded-[6px] w-[200px] justify-center bg-[#EBC166] flex items-center gap-[20px]"
+                  type="button"
+                >
+                  <img src="../images/savat.svg" alt="" />
+                  <p>Savatga qo'shish</p>
+                </button>
+
+                <div
+                  id="popup-modal"
+                  tabindex="-1"
+                  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+                >
+                  <div
+                    class="relative p-4 w-full max-w-md max-h-full alo1 rounded-[10px]"
+                  >
+                    <div class="relative p-4 md:p-6">
+                      <button
+                        type="button"
+                        class="absolute top-3 end-2.5 text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="popup-modal"
+                      >
+                        <svg
+                          class="w-5 h-5"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18 17.94 6M18 18 6.06 6"
+                          />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                      </button>
+                      <div class="p-4 md:p-5 text-center">
+                        <img
+                          width="90"
+                          height="90"
+                          class="mx-auto"
+                          src="../images/check.png"
+                          alt=""
+                        />
+                        <h3 class="mb-6 text-[30px] text-white">
+                          Savatga qoshildi!
+                        </h3>
+                        <div class="flex items-center space-x-4 justify-center">
+                          <button
+                            data-modal-hide="popup-modal"
+                            type="button"
+                            class="text-white mx-auto border border-[green] p-[5px] rounded-[6px] bg-[green] w-[140px]"
+                          >
+                            Xo'p
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="p-[7px] border border-[#A1A1A1] rounded-[6px] w-[40px] h-[40px]"
+                >
+                  <div class="heart-container mx-auto" title="Like">
+                    <input
+                      type="checkbox"
+                      class="checkbox"
+                      id="Give-It-An-Id"
+                    />
+                    <div class="svg-container">
+                      <svg
+                        viewBox="0 0 24 24"
+                        class="svg-outline"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                        ></path>
+                      </svg>
+                      <svg
+                        viewBox="0 0 24 24"
+                        class="svg-filled"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="svg-celebrate"
+                        width="100"
+                        height="100"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <polygon points="10,10 20,20"></polygon>
+                        <polygon points="10,50 20,50"></polygon>
+                        <polygon points="20,80 30,70"></polygon>
+                        <polygon points="90,10 80,20"></polygon>
+                        <polygon points="90,50 80,50"></polygon>
+                        <polygon points="80,80 70,70"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div class="pt-[30px] max-[605px]:p-[10px]">
+                <button
+                  class="bg-transparent max-[420px]:mt-[30px] max-[605px]:mx-auto w-full border border-[#EBC166] p-[10px] rounded-[6px] text-white text-[18px]"
+                >
+                  Hozir sotb olish
+                </button>
+              </div>
+
+              <div class="text-white mt-[100px] mb-[20px]">
+                <div class="flex items-center gap-[14px]">
+                  <img src="../images/truck.svg" alt="" />
+                  <p class="text-[14px]">
+                    Bepul yetkazib berish — Toshkent bo'ylab 1 kunda
+                  </p>
+                </div>
+
+                <div class="flex items-center gap-[14px] py-[16px]">
+                  <img src="../images/himoya.svg" alt="" />
+                  <p class="text-[14px]">Rasmiy kafolat — 2 yil</p>
+                </div>
+
+                <div class="flex items-center gap-[14px]">
+                  <img src="../images/chamadon.svg" alt="" />
+                  <p class="text-[14px]">14 kun ichida qaytarish</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#0E0E0C] pt-[50px]">
+        <div class="max-w-[1200px] mx-auto w-full px-[30px]">
+          <div
+            class="grid grid-cols-4 gap-[24px] mt-[32px] max-[875px]:grid-cols-2 max-[665px]:grid-cols-1"
+          >
+            <div
+              class="k-kard max-w-[250px] w-full mx-auto bg-[#1A1A1C] rounded-[6px] p-[20px] text-white max-[875px]:max-w-[290px]"
+            >
+              <div class="flex items-center justify-between pb-[50px]">
+                <button
+                  class="text-[15px] p-[3px] bg-[#EBC166] text-[#402D00] rounded-[9999px] w-[73px]"
+                >
+                  YANGI
+                </button>
+                <!-- From Uiverse.io by catraco -->
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="h-[170px] pb-[30px] mx-auto w-[200px] max-[875px]:w-[250px] object-cover object-cover"
+                src="../images/watch1.png"
+                alt=""
+              />
+
+              <div>
+                <h2 class="pb-[10px] text-[#EBC166] text-[13px]">ROLEX</h2>
+                <h3 class="text-white text-[16px] pb-[8px]">Submariner Date</h3>
+                <div class="flex items-center gap-[7px]">
+                  <img src="../images/yulduz.png" alt="" />
+                  <h3 class="text-white text-[14px]">4.9 (42)</h3>
+                </div>
+
+                <div class="flex items-center justify-between pt-[10px]">
+                  <h3 class="text-[18px] text-[#EBC166] font-bold">
+                    145 000 000 <br />
+                    so'm
+                  </h3>
+
+                  <h3 class="h3 text-[#D1C5B2] text-[15px]">
+                    170 000 000 <br />
+                    so'm
+                  </h3>
+                </div>
+
+                <div class="flex justify-center mt-[20px]">
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="static-modal"
+                    data-modal-toggle="static-modal"
+                    class="bg-transparent border border-[#EBC166] p-[9px] w-full rounded-[9999px] text-[#EBC166]"
+                    type="button"
+                  >
+                    SAVATGA QO'SHISH
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="static-modal"
+                    data-modal-backdrop="static"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)]"
+                  >
+                    <div
+                      class="alo rounded-[10px] relative p-4 w-full max-w-[400px] max-h-full"
+                    >
+                      <!-- Modal content -->
+                      <div
+                        class="relative bg-neutral-primary-soft rounded-base p-4 md:p-6"
+                      >
+                        <!-- Modal header -->
+
+                        <p class="pb-[30px] text-[25px] text-center">
+                          Bu Buyumni Savatga Qoshmoqchimisiz?
+                        </p>
+
+                        <!-- Modal footer -->
+                        <div class="flex items-center gap-[20px]">
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="bg-[green] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Ha
+                          </button>
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="text-body bg-[red] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Yo'q
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="k-kard max-w-[250px] w-full mx-auto bg-[#1A1A1C] rounded-[6px] p-[20px] text-white max-[875px]:max-w-[290px]"
+            >
+              <div class="flex items-center justify-between pb-[50px]">
+                <button
+                  class="text-[15px] p-[3px] bg-[#EBC166] text-[#402D00] rounded-[9999px] w-[73px]"
+                >
+                  YANGI
+                </button>
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="h-[170px] pb-[30px] object-cove mx-auto w-[200px] max-[875p object-coverx]:w-[250px] object-cover"
+                src="../images/watch1.png"
+                alt=""
+              />
+
+              <div>
+                <h2 class="pb-[10px] text-[#EBC166] text-[13px]">ROLEX</h2>
+                <h3 class="text-white text-[16px] pb-[8px]">Submariner Date</h3>
+                <div class="flex items-center gap-[7px]">
+                  <img src="../images/yulduz.png" alt="" />
+                  <h3 class="text-white text-[14px]">4.9 (42)</h3>
+                </div>
+
+                <div class="flex items-center justify-between pt-[10px]">
+                  <h3 class="text-[18px] text-[#EBC166] font-bold">
+                    145 000 000 <br />
+                    so'm
+                  </h3>
+
+                  <h3 class="h3 text-[#D1C5B2] text-[15px]">
+                    170 000 000 <br />
+                    so'm
+                  </h3>
+                </div>
+
+                <div class="flex justify-center mt-[20px]">
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="static-modal"
+                    data-modal-toggle="static-modal"
+                    class="bg-transparent border border-[#EBC166] p-[9px] w-full rounded-[9999px] text-[#EBC166]"
+                    type="button"
+                  >
+                    SAVATGA QO'SISH
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="static-modal"
+                    data-modal-backdrop="static"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)]"
+                  >
+                    <div
+                      class="alo rounded-[10px] relative p-4 w-full max-w-[400px] max-h-full"
+                    >
+                      <!-- Modal content -->
+                      <div
+                        class="relative bg-neutral-primary-soft rounded-base p-4 md:p-6"
+                      >
+                        <!-- Modal header -->
+
+                        <p class="pb-[30px] text-[25px] text-center">
+                          Bu Buyumni Savatga Qoshmoqchimisiz?
+                        </p>
+
+                        <!-- Modal footer -->
+                        <div class="flex items-center gap-[20px]">
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="bg-[green] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Ha
+                          </button>
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="text-body bg-[red] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Yo'q
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="k-kard max-w-[250px] w-full mx-auto bg-[#1A1A1C] rounded-[6px] p-[20px] text-white max-[875px]:max-w-[290px]"
+            >
+              <div class="flex items-center justify-between pb-[50px]">
+                <button
+                  class="text-[15px] p-[3px] bg-[#EBC166] text-[#402D00] rounded-[9999px] w-[73px]"
+                >
+                  YANGI
+                </button>
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="h-[170px] pb-[30px] object-cove mx-auto w-[200px] max-[875p object-coverx]:w-[250px] object-cover"
+                src="../images/watch1.png"
+                alt=""
+              />
+
+              <div>
+                <h2 class="pb-[10px] text-[#EBC166] text-[13px]">ROLEX</h2>
+                <h3 class="text-white text-[16px] pb-[8px]">Submariner Date</h3>
+                <div class="flex items-center gap-[7px]">
+                  <img src="../images/yulduz.png" alt="" />
+                  <h3 class="text-white text-[14px]">4.9 (42)</h3>
+                </div>
+
+                <div class="flex items-center justify-between pt-[10px]">
+                  <h3 class="text-[18px] text-[#EBC166] font-bold">
+                    145 000 000 <br />
+                    so'm
+                  </h3>
+
+                  <h3 class="h3 text-[#D1C5B2] text-[15px]">
+                    170 000 000 <br />
+                    so'm
+                  </h3>
+                </div>
+
+                <div class="flex justify-center mt-[20px]">
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="static-modal"
+                    data-modal-toggle="static-modal"
+                    class="bg-transparent border border-[#EBC166] p-[9px] w-full rounded-[9999px] text-[#EBC166]"
+                    type="button"
+                  >
+                    SAVATGA QO'SISH
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="static-modal"
+                    data-modal-backdrop="static"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)]"
+                  >
+                    <div
+                      class="alo rounded-[10px] relative p-4 w-full max-w-[400px] max-h-full"
+                    >
+                      <!-- Modal content -->
+                      <div
+                        class="relative bg-neutral-primary-soft rounded-base p-4 md:p-6"
+                      >
+                        <!-- Modal header -->
+
+                        <p class="pb-[30px] text-[25px] text-center">
+                          Bu Buyumni Savatga Qoshmoqchimisiz?
+                        </p>
+
+                        <!-- Modal footer -->
+                        <div class="flex items-center gap-[20px]">
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="bg-[green] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Ha
+                          </button>
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="text-body bg-[red] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Yo'q
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="k-kard max-w-[250px] w-full mx-auto bg-[#1A1A1C] rounded-[6px] p-[20px] text-white max-[875px]:max-w-[290px]"
+            >
+              <div class="flex items-center justify-between pb-[50px]">
+                <button
+                  class="text-[15px] p-[3px] bg-[#EBC166] text-[#402D00] rounded-[9999px] w-[73px]"
+                >
+                  YANGI
+                </button>
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="h-[170px] pb-[30px] mx-auto w-[200px] max-[875px]:w-[250px] object-cover"
+                src="../images/watch1.png"
+                alt=""
+              />
+
+              <div>
+                <h2 class="pb-[10px] text-[#EBC166] text-[13px]">ROLEX</h2>
+                <h3 class="text-white text-[16px] pb-[8px]">Submariner Date</h3>
+                <div class="flex items-center gap-[7px]">
+                  <img src="../images/yulduz.png" alt="" />
+                  <h3 class="text-white text-[14px]">4.9 (42)</h3>
+                </div>
+
+                <div class="flex items-center justify-between pt-[10px]">
+                  <h3 class="text-[18px] text-[#EBC166] font-bold">
+                    145 000 000 <br />
+                    so'm
+                  </h3>
+
+                  <h3 class="h3 text-[#D1C5B2] text-[15px]">
+                    170 000 000 <br />
+                    so'm
+                  </h3>
+                </div>
+
+                <div class="flex justify-center mt-[20px]">
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="static-modal"
+                    data-modal-toggle="static-modal"
+                    class="bg-transparent border border-[#EBC166] p-[9px] w-full rounded-[9999px] text-[#EBC166]"
+                    type="button"
+                  >
+                    SAVATGA QO'SISH
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="static-modal"
+                    data-modal-backdrop="static"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)]"
+                  >
+                    <div
+                      class="alo rounded-[10px] relative p-4 w-full max-w-[400px] max-h-full"
+                    >
+                      <!-- Modal content -->
+                      <div
+                        class="relative bg-neutral-primary-soft rounded-base p-4 md:p-6"
+                      >
+                        <!-- Modal header -->
+
+                        <p class="pb-[30px] text-[25px] text-center">
+                          Bu Buyumni Savatga Qoshmoqchimisiz?
+                        </p>
+
+                        <!-- Modal footer -->
+                        <div class="flex items-center gap-[20px]">
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="bg-[green] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Ha
+                          </button>
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="text-body bg-[red] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Yo'q
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="k-kard max-w-[250px] w-full mx-auto bg-[#1A1A1C] rounded-[6px] p-[20px] text-white max-[875px]:max-w-[290px]"
+            >
+              <div class="flex items-center justify-between pb-[50px]">
+                <button
+                  class="text-[15px] p-[3px] bg-[#EBC166] text-[#402D00] rounded-[9999px] w-[73px]"
+                >
+                  YANGI
+                </button>
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="h-[170px] pb-[30px] mx-auto w-[200px] max-[875px]:w-[250px] object-cover"
+                src="../images/watch1.png"
+                alt=""
+              />
+
+              <div>
+                <h2 class="pb-[10px] text-[#EBC166] text-[13px]">ROLEX</h2>
+                <h3 class="text-white text-[16px] pb-[8px]">Submariner Date</h3>
+                <div class="flex items-center gap-[7px]">
+                  <img src="../images/yulduz.png" alt="" />
+                  <h3 class="text-white text-[14px]">4.9 (42)</h3>
+                </div>
+
+                <div class="flex items-center justify-between pt-[10px]">
+                  <h3 class="text-[18px] text-[#EBC166] font-bold">
+                    145 000 000 <br />
+                    so'm
+                  </h3>
+
+                  <h3 class="h3 text-[#D1C5B2] text-[15px]">
+                    170 000 000 <br />
+                    so'm
+                  </h3>
+                </div>
+
+                <div class="flex justify-center mt-[20px]">
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="static-modal"
+                    data-modal-toggle="static-modal"
+                    class="bg-transparent border border-[#EBC166] p-[9px] w-full rounded-[9999px] text-[#EBC166]"
+                    type="button"
+                  >
+                    SAVATGA QO'SISH
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="static-modal"
+                    data-modal-backdrop="static"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)]"
+                  >
+                    <div
+                      class="alo rounded-[10px] relative p-4 w-full max-w-[400px] max-h-full"
+                    >
+                      <!-- Modal content -->
+                      <div
+                        class="relative bg-neutral-primary-soft rounded-base p-4 md:p-6"
+                      >
+                        <!-- Modal header -->
+
+                        <p class="pb-[30px] text-[25px] text-center">
+                          Bu Buyumni Savatga Qoshmoqchimisiz?
+                        </p>
+
+                        <!-- Modal footer -->
+                        <div class="flex items-center gap-[20px]">
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="bg-[green] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Ha
+                          </button>
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="text-body bg-[red] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Yo'q
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="k-kard max-w-[250px] w-full mx-auto bg-[#1A1A1C] rounded-[6px] p-[20px] text-white max-[875px]:max-w-[290px]"
+            >
+              <div class="flex items-center justify-between pb-[50px]">
+                <button
+                  class="text-[15px] p-[3px] bg-[#EBC166] text-[#402D00] rounded-[9999px] w-[73px]"
+                >
+                  YANGI
+                </button>
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="h-[170px] pb-[30px] mx-auto w-[200px] max-[875px]:w-[250px] object-cover"
+                src="../images/watch1.png"
+                alt=""
+              />
+
+              <div>
+                <h2 class="pb-[10px] text-[#EBC166] text-[13px]">ROLEX</h2>
+                <h3 class="text-white text-[16px] pb-[8px]">Submariner Date</h3>
+                <div class="flex items-center gap-[7px]">
+                  <img src="../images/yulduz.png" alt="" />
+                  <h3 class="text-white text-[14px]">4.9 (42)</h3>
+                </div>
+
+                <div class="flex items-center justify-between pt-[10px]">
+                  <h3 class="text-[18px] text-[#EBC166] font-bold">
+                    145 000 000 <br />
+                    so'm
+                  </h3>
+
+                  <h3 class="h3 text-[#D1C5B2] text-[15px]">
+                    170 000 000 <br />
+                    so'm
+                  </h3>
+                </div>
+
+                <div class="flex justify-center mt-[20px]">
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="static-modal"
+                    data-modal-toggle="static-modal"
+                    class="bg-transparent border border-[#EBC166] p-[9px] w-full rounded-[9999px] text-[#EBC166]"
+                    type="button"
+                  >
+                    SAVATGA QO'SISH
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="static-modal"
+                    data-modal-backdrop="static"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)]"
+                  >
+                    <div
+                      class="alo rounded-[10px] relative p-4 w-full max-w-[400px] max-h-full"
+                    >
+                      <!-- Modal content -->
+                      <div
+                        class="relative bg-neutral-primary-soft rounded-base p-4 md:p-6"
+                      >
+                        <!-- Modal header -->
+
+                        <p class="pb-[30px] text-[25px] text-center">
+                          Bu Buyumni Savatga Qoshmoqchimisiz?
+                        </p>
+
+                        <!-- Modal footer -->
+                        <div class="flex items-center gap-[20px]">
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="bg-[green] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Ha
+                          </button>
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="text-body bg-[red] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Yo'q
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="k-kard max-w-[250px] w-full mx-auto bg-[#1A1A1C] rounded-[6px] p-[20px] text-white max-[875px]:max-w-[290px]"
+            >
+              <div class="flex items-center justify-between pb-[50px]">
+                <button
+                  class="text-[15px] p-[3px] bg-[#EBC166] text-[#402D00] rounded-[9999px] w-[73px]"
+                >
+                  YANGI
+                </button>
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="h-[170px] pb-[30px] mx-auto w-[200px] max-[875px]:w-[250px] object-cover"
+                src="../images/watch1.png"
+                alt=""
+              />
+
+              <div>
+                <h2 class="pb-[10px] text-[#EBC166] text-[13px]">ROLEX</h2>
+                <h3 class="text-white text-[16px] pb-[8px]">Submariner Date</h3>
+                <div class="flex items-center gap-[7px]">
+                  <img src="../images/yulduz.png" alt="" />
+                  <h3 class="text-white text-[14px]">4.9 (42)</h3>
+                </div>
+
+                <div class="flex items-center justify-between pt-[10px]">
+                  <h3 class="text-[18px] text-[#EBC166] font-bold">
+                    145 000 000 <br />
+                    so'm
+                  </h3>
+
+                  <h3 class="h3 text-[#D1C5B2] text-[15px]">
+                    170 000 000 <br />
+                    so'm
+                  </h3>
+                </div>
+
+                <div class="flex justify-center mt-[20px]">
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="static-modal"
+                    data-modal-toggle="static-modal"
+                    class="bg-transparent border border-[#EBC166] p-[9px] w-full rounded-[9999px] text-[#EBC166]"
+                    type="button"
+                  >
+                    SAVATGA QO'SISH
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="static-modal"
+                    data-modal-backdrop="static"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)]"
+                  >
+                    <div
+                      class="alo rounded-[10px] relative p-4 w-full max-w-[400px] max-h-full"
+                    >
+                      <!-- Modal content -->
+                      <div
+                        class="relative bg-neutral-primary-soft rounded-base p-4 md:p-6"
+                      >
+                        <!-- Modal header -->
+
+                        <p class="pb-[30px] text-[25px] text-center">
+                          Bu Buyumni Savatga Qoshmoqchimisiz?
+                        </p>
+
+                        <!-- Modal footer -->
+                        <div class="flex items-center gap-[20px]">
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="bg-[green] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Ha
+                          </button>
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="text-body bg-[red] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Yo'q
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="k-kard max-w-[250px] w-full mx-auto bg-[#1A1A1C] rounded-[6px] p-[20px] text-white max-[875px]:max-w-[290px]"
+            >
+              <div class="flex items-center justify-between pb-[50px]">
+                <button
+                  class="text-[15px] p-[3px] bg-[#EBC166] text-[#402D00] rounded-[9999px] w-[73px]"
+                >
+                  YANGI
+                </button>
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="h-[170px] pb-[30px] mx-auto w-[200px] max-[875px]:w-[250px] object-cover"
+                src="../images/watch1.png"
+                alt=""
+              />
+
+              <div>
+                <h2 class="pb-[10px] text-[#EBC166] text-[13px]">ROLEX</h2>
+                <h3 class="text-white text-[16px] pb-[8px]">Submariner Date</h3>
+                <div class="flex items-center gap-[7px]">
+                  <img src="../images/yulduz.png" alt="" />
+                  <h3 class="text-white text-[14px]">4.9 (42)</h3>
+                </div>
+
+                <div class="flex items-center justify-between pt-[10px]">
+                  <h3 class="text-[18px] text-[#EBC166] font-bold">
+                    145 000 000 <br />
+                    so'm
+                  </h3>
+
+                  <h3 class="h3 text-[#D1C5B2] text-[15px]">
+                    170 000 000 <br />
+                    so'm
+                  </h3>
+                </div>
+
+                <div class="flex justify-center mt-[20px]">
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="static-modal"
+                    data-modal-toggle="static-modal"
+                    class="bg-transparent border border-[#EBC166] p-[9px] w-full rounded-[9999px] text-[#EBC166]"
+                    type="button"
+                  >
+                    SAVATGA QO'SISH
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="static-modal"
+                    data-modal-backdrop="static"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)]"
+                  >
+                    <div
+                      class="alo rounded-[10px] relative p-4 w-full max-w-[400px] max-h-full"
+                    >
+                      <!-- Modal content -->
+                      <div
+                        class="relative bg-neutral-primary-soft rounded-base p-4 md:p-6"
+                      >
+                        <!-- Modal header -->
+
+                        <p class="pb-[30px] text-[25px] text-center">
+                          Bu Buyumni Savatga Qoshmoqchimisiz?
+                        </p>
+
+                        <!-- Modal footer -->
+                        <div class="flex items-center gap-[20px]">
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="bg-[green] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Ha
+                          </button>
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="text-body bg-[red] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Yo'q
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="k-kard max-w-[250px] w-full mx-auto bg-[#1A1A1C] rounded-[6px] p-[20px] text-white max-[875px]:max-w-[290px]"
+            >
+              <div class="flex items-center justify-between pb-[50px]">
+                <button
+                  class="text-[15px] p-[3px] bg-[#EBC166] text-[#402D00] rounded-[9999px] w-[73px]"
+                >
+                  YANGI
+                </button>
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="h-[170px] pb-[30px] mx-auto w-[200px] max-[875px]:w-[250px] object-cover"
+                src="../images/watch1.png"
+                alt=""
+              />
+
+              <div>
+                <h2 class="pb-[10px] text-[#EBC166] text-[13px]">ROLEX</h2>
+                <h3 class="text-white text-[16px] pb-[8px]">Submariner Date</h3>
+                <div class="flex items-center gap-[7px]">
+                  <img src="../images/yulduz.png" alt="" />
+                  <h3 class="text-white text-[14px]">4.9 (42)</h3>
+                </div>
+
+                <div class="flex items-center justify-between pt-[10px]">
+                  <h3 class="text-[18px] text-[#EBC166] font-bold">
+                    145 000 000 <br />
+                    so'm
+                  </h3>
+
+                  <h3 class="h3 text-[#D1C5B2] text-[15px]">
+                    170 000 000 <br />
+                    so'm
+                  </h3>
+                </div>
+
+                <div class="flex justify-center mt-[20px]">
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="static-modal"
+                    data-modal-toggle="static-modal"
+                    class="bg-transparent border border-[#EBC166] p-[9px] w-full rounded-[9999px] text-[#EBC166]"
+                    type="button"
+                  >
+                    SAVATGA QO'SISH
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="static-modal"
+                    data-modal-backdrop="static"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center md:inset-0 h-[calc(100%-1rem)]"
+                  >
+                    <div
+                      class="alo rounded-[10px] relative p-4 w-full max-w-[400px] max-h-full"
+                    >
+                      <!-- Modal content -->
+                      <div
+                        class="relative bg-neutral-primary-soft rounded-base p-4 md:p-6"
+                      >
+                        <!-- Modal header -->
+
+                        <p class="pb-[30px] text-[25px] text-center">
+                          Bu Buyumni Savatga Qoshmoqchimisiz?
+                        </p>
+
+                        <!-- Modal footer -->
+                        <div class="flex items-center gap-[20px]">
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="bg-[green] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Ha
+                          </button>
+                          <button
+                            data-modal-hide="static-modal"
+                            type="button"
+                            class="text-body bg-[red] p-[6px] rounded-[6px] mx-auto w-[200px]"
+                          >
+                            Yo'q
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-[90px] bg-[#0E0E0C]">
+      <div class="max-w-[1200px] mx-auto w-full px-[30px]">
+        <div
+          class="flex p-[20px] items-start gap-[30px] justify-between max-[858px]:flex-col max-[858px]:p-[10px] max-[858px]:gap-[30px]"
+        >
+          <div class="max-[858px]:mx-auto">
+            <img class="pb-[23px]" src="../images/vaqt.svg" alt="" />
+            <p class="text-[#9A8F7E] italic pb-[23px] text-[16px]">
+              "Har bir soniya — san'at asari"
+            </p>
+            <div class="flex items-center gap-[20px]">
+              <a href=""><img src="../images/l2.png" alt="" /></a>
+              <a href=""><img src="../images/l3.png" alt="" /></a>
+              <a href=""><img src="../images/l4.png" alt="" /></a>
+            </div>
+          </div>
+
+          <div
+            class="flex items-start gap-[200px] mx-auto max-[858px]:gap-[46px]"
+          >
+            <div class="max-[858px]:mx-auto">
+              <h2 class="text-[16px] text-[#EBC166] pb-[24px]">MENYU</h2>
+
+              <a href="../index.html">
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">Bosh sahifa</p>
+              </a>
+
+              <a href="">
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">Katalog</p>
+              </a>
+
+              <a href="">
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                  Biz haqimizda
+                </p>
+              </a>
+
+              <a href="">
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">Aloqa</p>
+              </a>
+            </div>
+
+            <div class="max-[858px]:mx-auto">
+              <h2 class="text-[16px] text-[#EBC166] pb-[24px]">YORDAM</h2>
+
+              <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                Yetkazib berish
+              </p>
+
+              <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                To'lov usullari
+              </p>
+
+              <p class="text-[13px] pb-[10px] text-[#9A8F7E]">Kafolat</p>
+
+              <p class="text-[13px] pb-[10px] text-[#9A8F7E]">Savollar</p>
+            </div>
+
+            <div class="max-[858px]:hidden">
+              <h2 class="text-[16px] text-[#EBC166] pb-[24px]">KONTAKTLAR</h2>
+
+              <div class="flex items-start gap-[15px]">
+                <img class="mt-[4px]" src="../images/tel.svg" alt="" />
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                  +998 71 200 00 00
+                </p>
+              </div>
+
+              <div class="flex items-start gap-[15px]">
+                <img class="mt-[4px]" src="../images/Icon.png" alt="" />
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                  Toshkent sh., Amir Temur <br />
+                  ko'chasi, 12-uy
+                </p>
+              </div>
+
+              <div class="flex items-start gap-[15px]">
+                <img class="mt-[4px]" src="../images/soat.svg" alt="" />
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                  10:00 - 21:00 (Har kuni)
+                </p>
+              </div>
+
+              <div class="flex items-center gap-[20px] mt-[20px]">
+                <a href="https://payme.uz/home/main"
+                  ><button
+                    class="p-[5px] rounded-[4px] w-[58px] border border-[#1A1A1A] text-[#9A8F7E]"
+                  >
+                    Payme
+                  </button></a
+                >
+                <a href="https://click.uz/ru"
+                  ><button
+                    class="p-[5px] rounded-[4px] w-[58px] border border-[#1A1A1A] text-[#9A8F7E]"
+                  >
+                    Click
+                  </button></a
+                >
+                <a href="https://click.uz/ru"
+                  ><button
+                    class="p-[5px] rounded-[4px] w-[58px] border border-[#1A1A1A] text-[#9A8F7E]"
+                  >
+                    Visa
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
+    <script
+      class="mx-auto"
+      src="https://cdn.jotfor.ms/agent/embedjs/019f8fb72f98700089808879a7f42426c159/embed.js"
+    ></script>
+
+    <script src="./scrip.js"></script>
+  </body>
+</html>

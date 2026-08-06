@@ -334,7 +334,7 @@
   background-color: #ebc166;
 }
 
-.ptichka span {
+.ptichka label {
   font-size: 16px;
   color: #fff;
 }
@@ -564,3 +564,30 @@ button{
   cursor: pointer;
 }
 
+.brands {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 40px 0;
+  overflow: hidden;
+}
+.brands-track {
+  display: flex;
+  gap: 84px;
+  width: max-content;
+  animation: scroll 22s linear infinite;
+}
+.brands-track span {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
