@@ -591,3 +591,7 @@ button{
     transform: translateX(-50%);
   }
 }
+
+.font-p{
+  font-weight: 500;
+}
