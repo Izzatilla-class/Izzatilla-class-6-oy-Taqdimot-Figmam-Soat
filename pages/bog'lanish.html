@@ -96,7 +96,7 @@
               id="authentication-modal"
               tabindex="-1"
               aria-hidden="true"
-              class="alo2 hidden overflow-y-auto w-full h-full  bg-cover bg-center bg-no-repeat overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+              class="alo2 hidden overflow-y-auto w-full h-full bg-cover bg-center bg-no-repeat overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
             >
               <div
                 class="login relative mx-[10px] bg-gray-900 text-white rounded-[6px] w-full max-w-md max-h-full"
@@ -513,7 +513,7 @@
                   data-tabs-toggle="#default-tab-content"
                   role="tablist"
                 >
-                  <li class="me-2" role="presentation">
+                  <li class="me-2 text-[16px]" role="presentation">
                     <button
                       class="inline-block p-4"
                       id="profile-tab"
@@ -787,6 +787,370 @@
                 <div class="flex items-center gap-[14px]">
                   <img src="../images/chamadon.svg" alt="" />
                   <p class="text-[14px]">14 kun ichida qaytarish</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#0E0E0C] pt-[50px]">
+        <div class="mx-auto max-w-[1200px] w-full px-[30px] text-[white]">
+          <div class="mb-4 mt-[20px] border-b border-[#C9A24B33]">
+            <ul
+              class="flex flex-wrap -mb-px text-sm font-medium text-center"
+              id="default-styled-tab"
+              data-tabs-toggle="#default-styled-tab-content"
+              data-tabs-active-classes="text-purple hover:text-purple border-purple"
+              data-tabs-inactive-classes="dark:border-transparent text-body hover:text-fg-brand border-default hover:border-brand"
+              role="tablist"
+            >
+              <li class="me-2 text-[16px]" role="presentation">
+                <button
+                  class="inline-block p-4 border-b-2 rounded-t-base"
+                  id="profile-styled-tab"
+                  data-tabs-target="#styled-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  TAVSIF
+                </button>
+              </li>
+              <li class="me-2 text-[16px]" role="presentation">
+                <button
+                  class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand"
+                  id="dashboard-styled-tab"
+                  data-tabs-target="#styled-dashboard"
+                  type="button"
+                  role="tab"
+                  aria-controls="dashboard"
+                  aria-selected="false"
+                >
+                  XUSUSIYATLAR
+                </button>
+              </li>
+              <li class="me-2 text-[16px]" role="presentation">
+                <button
+                  class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand"
+                  id="settings-styled-tab"
+                  data-tabs-target="#styled-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="settings"
+                  aria-selected="false"
+                >
+                  SHARHLAR (214)
+                </button>
+              </li>
+              <li role="presentation">
+                <button
+                  class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand"
+                  id="contacts-styled-tab"
+                  data-tabs-target="#styled-contacts"
+                  type="button"
+                  role="tab"
+                  aria-controls="contacts"
+                  aria-selected="false"
+                >
+                  YETKAZIB BERISH
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- -------------------------------------- -->
+
+          <div id="default-styled-tab-content">
+            <div
+              class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+              id="styled-profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="flex items-start justify-between w-full">
+                <div>
+                  <h1 class="text-[25px] pb-[24px]">
+                    Hunarmandchilikning cho'qqisi
+                  </h1>
+                  <p class="text-[16px] text-[#A1A1A1] pb-[24px]">
+                    Rolex Submariner modeli ilk bor 1953 yilda taqdim etilgan
+                    bo'lib, o'sha <br />
+                    paytdan beri u professional g'avvoslar va uslubni qadrlovchi
+                    insonlar <br />
+                    uchun benchmark bo'lib kelmoqda. Oyster po'lati o'zining
+                    <br />
+                    mustahkamligi va yillar o'tsa ham yaltirab turishi bilan
+                    mashhur.
+                  </p>
+
+                  <p class="text-[16px] text-[#A1A1A1]">
+                    Yangi 41 mm korpus 3235 kalibrli avtomat mexanizm bilan
+                    jihozlangan <br />
+                    bo'lib, 70 soatgacha quvvat zaxirasiga ega. Bu shunchaki
+                    soat emas, bu <br />
+                    sizning muvaffaqiyatingiz belgisi.
+                  </p>
+                </div>
+                <!-- ........................... -->
+
+                <div class="flex flex-col gap-[25px] w-[500px]">
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Model kodi</h3>
+                    <p class="text-[16px] text-white">126610LN</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Mexanizm turi</h3>
+                    <p class="text-[16px] text-white">Avtomat (3235 Kalibr)</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">
+                      Suvga chidamlilik
+                    </h3>
+                    <p class="text-[16px] text-white">300 m / 1000 ft</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Material</h3>
+                    <p class="text-[16px] text-white">Oystersteel po'lati</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Shisha</h3>
+                    <p class="text-[16px] text-white">Sintetik sapfir</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+              id="styled-dashboard"
+              role="tabpanel"
+              aria-labelledby="dashboard-tab"
+            >
+              <div class="flex items-start justify-between w-full">
+                <div>
+                  <h1 class="text-[25px] pb-[24px]">
+                    Mukammal muhandislik va aniqlik
+                  </h1>
+                  <p class="text-[16px] text-[#A1A1A1] pb-[24px]">
+                    Rolex Submariner modeli dengiz osti tadqiqotlari va <br />
+                    professional g'avvoslar uchun maxsus yaratilgan bo'lib,
+                    <br />
+                    uning mustahkam korpusi va suv o'tkazmaslik darajasi <br />
+                    soatsozlik dunyosida yangi standartni belgilab bergan.
+                  </p>
+
+                  <p class="text-[16px] text-[#A1A1A1]">
+                    Suv ostida ham, kundalik hayotda ham nozik uslubni namoyon
+                    <br />
+                    etuvchi ushbu model premium sifatli materiallar va yuqori
+                    <br />
+                    aniqlikdagi avtomat mexanizm bilan jihozlangan.
+                  </p>
+                </div>
+                <!-- ........................... -->
+
+                <div class="flex flex-col gap-[25px] w-[500px]">
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Model kodi</h3>
+                    <p class="text-[16px] text-white">126610LN</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Korpus diametri</h3>
+                    <p class="text-[16px] text-white">41 mm</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Bezel</h3>
+                    <p class="text-[16px] text-white">
+                      Cerachrom keramika (qora)
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Mexanizm</h3>
+                    <p class="text-[16px] text-white">3235 Kalibr (Avtomat)</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Quvvat zaxirasi</h3>
+                    <p class="text-[16px] text-white">70 soatgacha</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+              id="styled-settings"
+              role="tabpanel"
+              aria-labelledby="settings-tab"
+            >
+              <div class="flex items-start justify-between w-full">
+                <div>
+                  <h1 class="text-[25px] pb-[24px]">
+                    Hunarmandchilikning cho'qqisi
+                  </h1>
+                  <p class="text-[16px] text-[#A1A1A1] pb-[24px]">
+                    Rolex Submariner modeli ilk bor 1953 yilda taqdim etilgan
+                    <br />
+                    bo'lib, o'sha paytdan beri u professional g'avvoslar va
+                    <br />
+                    uslubni qadrlovchi insonlar uchun benchmark bo'lib kelmoqda.
+                    <br />
+                    Oyster po'lati o'zining mustahkamligi va yillar o'tsa ham
+                    <br />
+                    yaltirab turishi bilan mashhur.
+                  </p>
+
+                  <p class="text-[16px] text-[#A1A1A1]">
+                    Klassik qora tsiferblat va yoritgichli soat millari tunda va
+                    <br />
+                    hatto eng chuqur suv ostida ham vaqtni aniq ko'rish imkonini
+                    <br />
+                    beradi. Bu shunchaki soat emas, bu sizning muvaffaqiyatingiz
+                    <br />
+                    va uslubingiz belgisi.
+                  </p>
+                </div>
+                <!-- ........................... -->
+
+                <div class="flex flex-col gap-[25px] w-[500px]">
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Kolleksiya</h3>
+                    <p class="text-[16px] text-white">Submariner Date</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Uslub</h3>
+                    <p class="text-[16px] text-white">Luks / Sport</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Kafolat</h3>
+                    <p class="text-[16px] text-white">5 yil</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">
+                      Ishlab chiqarilgan mamlakat
+                    </h3>
+                    <p class="text-[16px] text-white">Shveytsariya</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Holati</h3>
+                    <p class="text-[16px] text-white">Yangi (Original)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+              id="styled-contacts"
+              role="tabpanel"
+              aria-labelledby="contacts-tab"
+            >
+              <div class="flex items-start justify-between w-full">
+                <div>
+                  <h1 class="text-[25px] pb-[24px]">
+                    Hunarmandchilikning cho'qqisi
+                  </h1>
+                  <p class="text-[16px] text-[#A1A1A1] pb-[24px]">
+                    Rolex Submariner modeli ilk bor 1953 yilda taqdim etilgan
+                    <br />
+                    bo'lib, o'sha paytdan beri u professional g'avvoslar va
+                    <br />
+                    uslubni qadrlovchi insonlar uchun benchmark bo'lib kelmoqda.
+                    <br />
+                    Oyster po'lati o'zining mustahkamligi va yillar o'tsa ham
+                    <br />
+                    yaltirab turishi bilan mashhur.
+                  </p>
+
+                  <p class="text-[16px] text-[#A1A1A1]">
+                    Klassik qora tsiferblat va yoritgichli soat millari tunda va
+                    <br />
+                    hatto eng chuqur suv ostida ham vaqtni aniq ko'rish imkonini
+                    <br />
+                    beradi. Bu shunchaki soat emas, bu sizning muvaffaqiyatingiz
+                    <br />
+                    va uslubingiz belgisi.
+                  </p>
+                </div>
+                <!-- ........................... -->
+
+                <div class="flex flex-col gap-[25px] w-[500px]">
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Kolleksiya</h3>
+                    <p class="text-[16px] text-white">Submariner Date</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Uslub</h3>
+                    <p class="text-[16px] text-white">Luks / Sport</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Kafolat</h3>
+                    <p class="text-[16px] text-white">5 yil</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">
+                      Ishlab chiqarilgan mamlakat
+                    </h3>
+                    <p class="text-[16px] text-white">Shveytsariya</p>
+                  </div>
+
+                  <div
+                    class="flex items-center justify-between border-b border-[#C9A24B33] pb-[12px]"
+                  >
+                    <h3 class="text-[16px] text-[#A1A1A1]">Holati</h3>
+                    <p class="text-[16px] text-white">Yangi (Original)</p>
+                  </div>
                 </div>
               </div>
             </div>
