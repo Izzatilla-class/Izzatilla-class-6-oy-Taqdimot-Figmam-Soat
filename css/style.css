@@ -593,5 +593,9 @@ button{
 }
 
 .font-p{
+  font-weight: 300;
+}
+
+.font-h1{
   font-weight: 500;
 }
