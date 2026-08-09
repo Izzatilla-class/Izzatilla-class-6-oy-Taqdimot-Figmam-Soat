@@ -14,7 +14,6 @@
   background-color: rgba(0, 0, 0, 0.626);
 }
 
-
 .alo1 {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(12px);
@@ -22,9 +21,9 @@
 }
 
 .login {
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(12px);
-  background-color: rgba(0, 0, 0, 0.685);
+background-color: rgba(128, 128, 128, 0.311);
 }
 
 .cloader {
@@ -242,69 +241,6 @@
   height: 480px;
 }
 
-.owl-dots {
-  position: relative;
-  bottom: 70px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.owl-dots .owl-dot:nth-child(1) {
-  position: absolute;
-  left: 20px;
-  top: 10px;
-  bottom: 30px;
-}
-
-.owl-dots .owl-dot:nth-child(2) {
-  position: absolute;
-  right: 1030px;
-  top: 10px;
-  bottom: 30px;
-}
-
-.owl-dots .owl-dot span {
-  width: 60px !important;
-}
-
-@media (max-width: 1200px) {
-  .owl-dots {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 15px !important;
-    position: relative !important;
-    bottom: 40px !important;
-  }
-
-  .owl-dots .owl-dot:nth-child(1) {
-    position: static !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-  }
-
-  .owl-dots .owl-dot:nth-child(2) {
-    position: static !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-  }
-
-  .owl-dots .owl-dot span {
-    width: 45px !important;
-  }
-}
-
-.owl-dot span {
-  background-color: #ebc166 !important;
-}
-
-.owl-dot span:active {
-  background-color: orange !important;
-}
-
 #hero {
   overflow: hidden;
 }
@@ -313,6 +249,126 @@
 #hero .owl-stage-outer,
 #hero .owl-stage {
   height: 700px !important;
+}
+
+.owl-carousel2 .owl-dots {
+  position: absolute !important;
+  bottom: 60px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  max-width: 1200px !important;
+  width: 100% !important;
+  padding: 0 20px !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  z-index: 30 !important;
+}
+
+.owl-carousel2 .owl-dots .owl-dot {
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.owl-carousel2 .owl-dots .owl-dot span {
+  width: 60px !important;
+  height: 6px !important;
+  background-color: #ebc166 !important;
+  border-radius: 2px !important;
+  margin: 0 !important;
+  display: block !important;
+  transition: all 0.3s ease;
+}
+
+.owl-carousel2 .owl-dots .owl-dot.active span {
+  background-color: #ffffff !important;
+}
+
+@media (max-width: 565px) {
+  .owl-carousel2 .owl-dots {
+    bottom: 30px !important;
+  }
+  .owl-carousel2 .owl-dots .owl-dot span {
+    width: 40px !important;
+  }
+}
+
+.owl-carousel1 .owl-dots {
+  position: static !important;
+  margin-top: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+}
+
+.owl-carousel1 .owl-dots .owl-dot {
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.owl-carousel1 .owl-dots .owl-dot span {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #333333 !important;
+  margin: 0 !important;
+  display: block !important;
+  transition: all 0.3s ease;
+}
+
+.owl-carousel1 .owl-dots .owl-dot.active span {
+  background-color: #ebc166 !important;
+  width: 25px !important;
+  border-radius: 10px !important;
+}
+
+.owl-carousel1 .owl-dots {
+  display: none !important;
+}
+
+@media (max-width: 1090px) {
+  .owl-carousel1 .owl-dots {
+    display: flex !important;
+    position: relative !important;
+    bottom: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 30px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .owl-carousel1 .owl-dots .owl-dot,
+  .owl-carousel1 .owl-dots .owl-dot:nth-child(1),
+  .owl-carousel1 .owl-dots .owl-dot:nth-child(2) {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .owl-carousel1 .owl-dots .owl-dot span {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    background-color: #333333 !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .owl-carousel1 .owl-dots .owl-dot.active span {
+    background-color: #ebc166 !important;
+  }
 }
 
 .ptichka {
@@ -468,14 +524,13 @@ input[type="range"]::-webkit-slider-thumb {
   text-decoration: line-through;
 }
 
-
-/* From Uiverse.io by catraco */ 
+/* From Uiverse.io by catraco */
 .heart-container {
   --heart-color: rgb(255, 91, 137);
   position: relative;
   width: 20px;
   height: 20px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .heart-container .checkbox {
@@ -496,7 +551,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .heart-container .svg-outline,
-        .heart-container .svg-filled {
+.heart-container .svg-filled {
   fill: var(--heart-color);
   position: absolute;
 }
@@ -507,20 +562,18 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .heart-container .svg-celebrate {
-
-
   animation-fill-mode: forwards;
   display: none;
   fill: var(--heart-color);
   stroke-width: 2px;
 }
 
-.heart-container .checkbox:checked~.svg-container .svg-filled {
-  display: block
+.heart-container .checkbox:checked ~ .svg-container .svg-filled {
+  display: block;
 }
 
-.heart-container .checkbox:checked~.svg-container .svg-celebrate {
-  display: block
+.heart-container .checkbox:checked ~ .svg-container .svg-celebrate {
+  display: block;
 }
 
 @keyframes keyframes-svg-filled {
@@ -555,12 +608,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
-
-.ul-tabs img{
+.ul-tabs img {
   cursor: pointer;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -592,10 +644,14 @@ button{
   }
 }
 
-.font-p{
+.font-p {
   font-weight: 300;
 }
 
-.font-h1{
+.font-h1 {
   font-weight: 500;
+}
+
+.imgall{
+  width: 25px !important;
 }
