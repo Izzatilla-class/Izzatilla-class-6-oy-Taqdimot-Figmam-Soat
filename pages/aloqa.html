@@ -1,11 +1,638 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../images/watchlogo1.png"
+      class="object-cover"
+    />
+    <title>VAQT</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="nav py-[30px] fixed top-0 left-0 w-full z-50">
+      <div class="max-w-[1200px] mx-auto w-full px-[30px]">
+        <div class="flex items-center justify-between gap-[20px]">
+          <div>
+            <img src="../images/vaqt.svg" width="107" alt="" />
+          </div>
+
+          <div class="text-white max-[896px]:hidden">
+            <ul class="flex items-center gap-[40px]">
+              <li class="inline-block group relative">
+                <a class="pb-0" href="../index.html">BOSH SAHIFA</a>
+                <span
+                  class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
+                ></span>
+              </li>
+              <li class="inline-block group relative">
+                <a class="pb-0" href="../pages/katalog.html">KATALOG</a>
+                <span
+                  class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
+                ></span>
+              </li>
+              <li class="inline-block group relative">
+                <a class="pb-0" href="../pages/bog'lanish.html"
+                  >BIZ HAQIMIZDA</a
+                >
+                <span
+                  class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
+                ></span>
+              </li>
+              <li class="inline-block group relative">
+                <a class="pb-0" href="../pages/aloqa.html">ALOQA</a>
+                <span
+                  class="inline-block absolute top-[22px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-full"
+                ></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex items-center gap-[20px] max-[896px]:hidden">
+            <img src="../images/Button.svg" alt="" />
+            <img src="../images/Button (1).png" alt="" />
+            <a href="../pages/savat.html"
+              ><img src="../images/Button (2).png" alt=""
+            /></a>
+          </div>
+
+          <div>
+            <!-- Modal toggle -->
+            <button
+              data-modal-target="authentication-modal"
+              data-modal-toggle="authentication-modal"
+              class="text-white max-[895px]:hidden bg-brand box-border border border-[#EBC166] rounded-[6px] p-[5px] w-[100px]"
+              type="button"
+            >
+              Kirish
+            </button>
+
+            <!-- Main modal -->
+            <div
+              id="authentication-modal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="hidden overflow-y-auto alo2 white h-full bg-cover bg-center bg-no-repeat overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            >
+              <div
+                class="login relative mx-[10px] bg-gray-900 text-white rounded-[6px] w-full max-w-md max-h-full"
+              >
+                <!-- Modal content -->
+                <div
+                  class="relative bg-neutral-primary-soft rounded-base shadow-sm p-4 md:p-6"
+                >
+                  <!-- Modal header -->
+                  <div
+                    class="flex items-center justify-between border-b border-default pb-4 md:pb-5"
+                  >
+                    <h3 class="text-lg font-medium text-heading">Kirish</h3>
+                    <button
+                      type="button"
+                      class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                      data-modal-hide="authentication-modal"
+                      10
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        a4ia-hidden="true"
+                        xmlns="http://www.w3.o5g/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          15
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18 17.94 6M18 18 6.06 6"
+                        />
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <form action="#" class="pt-4 md:pt-6">
+                    <div class="mb-4">
+                      <label
+                        for="email"
+                        class="block mb-2.5 text-sm font-medium text-heading"
+                        >Emailingizni Kiriting</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        class="bg-neutral-secondary-medium border border-default-medium text-heading text-black text-sm rounded-[6px] focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                        placeholder="example@company.com"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="password"
+                        class="block mb-2.5 text-sm font-medium text-heading"
+                        >Parolni Kiriting</label
+                      >
+                      <input
+                        type="password"
+                        id="password"
+                        class="bg-neutral-secondary-medium text-black border border-default-medium text-heading text-sm rounded-[6px] focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                        placeholder="•••••••••"
+                        required
+                      />
+                    </div>
+                    <div class="flex items-start my-6">
+                      <div class="flex items-center">
+                        <input
+                          id="checkbox-remember"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 text-black border border-default-medium bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft"
+                        />
+                        <label
+                          for="checkbox-remember"
+                          class="ms-2 text-sm font-medium text-heading"
+                          >Tasdiqlang</label
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        class="ms-auto text-sm font-medium text-fg-brand hover:underline"
+                        >Parol esingizdan chiqdimi?</a
+                      >
+                    </div>
+                    <button
+                      type="submit"
+                      class="text-black bg-white box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-[6px] text-sm px-4 py-2.5 focus:outline-none w-full mb-3"
+                    >
+                      Login bilan kirish
+                    </button>
+                    <div class="text-sm font-medium text-body">
+                      Akkauntsiz foydalanish<a
+                        href="#"
+                        class="text-fg-brand hover:underline"
+                        >.</a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- drawer init and toggle -->
+          <div class="text-center hidden rotate-[90deg] max-[895px]:block">
+            <button
+              class="font-bold text-[25px] items-center justify-center text-white"
+              type="button"
+              data-drawer-target="drawer-left-example"
+              data-drawer-show="drawer-left-example"
+              data-drawer-placement="left"
+              aria-controls="drawer-left-example"
+            >
+              |||
+            </button>
+          </div>
+
+          <!-- drawer component -->
+          <div
+            id="drawer-left-example"
+            class="alo fixed top-0 text-white left-0 z-40 h-screen bg-black p-4 overflow-y-auto transition-transform -translate-x-full w-96"
+            tabindex="-1"
+            aria-labelledby="drawer-left-label"
+          >
+            <div class="pb-4 mb-5 flex items-center">
+              <img width="100" src="../images/vaqt.svg" alt="" />
+              <button
+                type="button"
+                data-drawer-hide="drawer-left-example"
+                aria-controls="drawer-left-example"
+                class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                  />
+                </svg>
+                <span class="sr-only">Close menu</span>
+              </button>
+            </div>
+            <div class="mt-[100px] mb-[20px] p-[20px]">
+              <ul class="flex flex-col text-[30px] gap-[20px]">
+                <li class="inline-block group relative">
+                  <a class="pb-0" href="../index.html">BOSH SAHIFA</a>
+                  <span
+                    class="inline-block absolute top-[52px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-[190px]"
+                  ></span>
+                </li>
+
+                <li class="inline-block group relative">
+                  <a class="pb-0" href="../pages/katalog.html">KATALOG</a>
+                  <span
+                    class="inline-block absolute top-[52px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-[130px]"
+                  ></span>
+                </li>
+
+                <li class="inline-block group relative">
+                  <a class="pb-0" href="../pages/bog'lanish.html"
+                    >BIZ HAQIMIZDA</a
+                  >
+                  <span
+                    class="inline-block absolute top-[52px] left-[0px] h-[2px] bg-[orange] duration-[0.8s] w-[0px] group-hover:w-[220px]"
+                  ></span>
+                </li>
+
+                <li class="inline-block group relative">
+                  <a class="pb-0" href="../pages/aloqa.html">ALOQA</a>
+                  <span
+                    class="inline-block absolute top-[52px] left-[0px] h-[2px] bg-[orange] duration-[0.3s] w-[0px] group-hover:w-[100px]"
+                  ></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex items-center justify-center gap-[20px]">
+              <img src="../images/instagram.svg" alt="" />
+              <img src="../images/ll2.svg" alt="" />
+              <img src="../images/you.svg" alt="" />
+            </div>
+
+            <div class="flex justify-center mt-[30px]">
+              <button
+                data-modal-target="authentication-modal"
+                data-modal-toggle="authentication-modal"
+                class="text-white bg-brand box-border border border-[#EBC166] rounded-[6px] p-[5px] w-[300px]"
+                type="button"
+              >
+                Kirish
+              </button>
+            </div>
+
+            <!-- Main modal -->
+            <div
+              id="authentication-modal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="hidden overflow-y-auto bg-1[url(../images/bg.png)] bg-cover bg-center bg-no-repeat overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            >
+              <div
+                class="relative p-4 bg-gray-100 rounded-[6px] w-full max-w-md max-h-full"
+              >
+                <!-- Modal content -->
+                <div
+                  class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6"
+                >
+                  <!-- Modal header -->
+                  <div
+                    class="flex items-center justify-between border-b border-default pb-4 md:pb-5"
+                  >
+                    <h3 class="text-lg font-medium text-heading">Kirish</h3>
+                    <button
+                      type="button"
+                      class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                      data-modal-hide="authentication-modal"
+                      10
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        a4ia-hidden="true"
+                        xmlns="http://www.w3.o5g/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          15
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18 17.94 6M18 18 6.06 6"
+                        />
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <form action="#" class="pt-4 md:pt-6">
+                    <div class="mb-4">
+                      <label
+                        for="email"
+                        class="block mb-2.5 text-sm font-medium text-heading"
+                        >Emailingizni Kiriting</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-[6px] focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                        placeholder="example@company.com"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="password"
+                        class="block mb-2.5 text-sm font-medium text-heading"
+                        >Parolni Kiriting</label
+                      >
+                      <input
+                        type="password"
+                        id="password"
+                        class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-[6px] focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                        placeholder="•••••••••"
+                        required
+                      />
+                    </div>
+                    <div class="flex items-start my-6">
+                      <div class="flex items-center">
+                        <input
+                          id="checkbox-remember"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 border border-default-medium bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft"
+                        />
+                        <label
+                          for="checkbox-remember"
+                          class="ms-2 text-sm font-medium text-heading"
+                          >Tasdiqlang</label
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        class="ms-auto text-sm font-medium text-fg-brand hover:underline"
+                        >Parol esingizdan chiqdimi?</a
+                      >
+                    </div>
+                    <button
+                      type="submit"
+                      class="text-white bg-black box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-[6px] text-sm px-4 py-2.5 focus:outline-none w-full mb-3"
+                    >
+                      Login bilan kirish
+                    </button>
+                    <div class="text-sm font-medium text-body">
+                      Akkauntsiz foydalanish<a
+                        href="#"
+                        class="text-fg-brand hover:underline"
+                        >.</a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-center text-[#EBC166] py-[20px] text-[20px]">
+                "Har bir soniya — san'at asari"
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<main>
+    <section class="bg-[#0E0E0C] pt-[150px] pb-[40px]">
+<div class="mx-auto max-w-[1200px] w-full px-[30px]">
+<div class="text-center">
+    <h1 class="text-[60px] text-white pb-[10px] max-[675px]:text-[28px]">Biz bilan bog'laning</h1>
+    <p class="text-[#a1a1a1] text-[16px] max-[675px]:text-[13px] max-[475px]:text-[10px]">Savollaringiz bormi? Jamoamiz doim yordamga tayyor va har bir mijoz uchun
+alohida e'tibor qaratishga intiladi.</p>
+</div>
+</div>
+    </section>
+
+    <section class="bg-[#0E0E0C] py-[40px]">
+<div class="mx-auto max-w-[1200px] w-full px-[30px]">
+<div class="grid grid-cols-3 gap-[20px] max-[990px]:grid-cols-2 max-[684px]:grid-cols-1">
+<div class="card1 mx-auto max-w-[368px] w-full p-[16px] rounded-[6px] w-full border border-[#1A1A1CCC] bg-[#1A1A1CB2]">
+<img class="pb-[8px] mx-auto" src="../images/xarita.svg" alt="">
+<h2 class="text-[20px] text-white text-center pb-[5px]">Manzil</h2>
+<p class="text-[16px] text-[#a1a1a1] text-center">Toshkent sh., Amir Temur ko'chasi 15</p>
+</div>
+
+<div class="card1 mx-auto max-w-[368px] w-full p-[16px] rounded-[6px] w-full border border-[#1A1A1CCC] bg-[#1A1A1CB2]">
+<img class="pb-[8px] mx-auto" src="../images/phonealo.svg" alt="">
+<h2 class="text-[20px] text-white text-center pb-[5px]">Telefon</h2>
+<p class="text-[16px] text-[#a1a1a1] text-center">+998 71 200 00 00</p>
+</div>
+
+<div class="card1 mx-auto max-w-[368px] w-full p-[16px] rounded-[6px] w-full border border-[#1A1A1CCC] bg-[#1A1A1CB2]">
+<img class="pb-[8px] mx-auto" src="../images/milsoat.svg" alt="">
+<h2 class="text-[20px] text-white text-center pb-[5px]">Ish vaqti</h2>
+<p class="text-[16px] text-[#a1a1a1] text-center">Dush–Shan: 10:00 – 21:00</p>
+</div>
+</div>
+</div>
+    </section>
+
+    <section class="bg-[#0E0E0C] py-[80px]">
+      <div class="mx-auto max-w-[1200px] w-full px-[30px]">
+        <div class="flex items-start gap-[48px]">
+<div>
+  <!-- From Uiverse.io by VIJAYAACHI --> 
+<div class="form-container">
+  <p class="title">Xabar qoldiring</p>
+  <form class="form">
+    <div class="input-group">
+      <label for="name">Ism</label>
+      <input placeholder="" id="username" name="username" type="text" />
+    </div>
+    <div class="input-group">
+      <label for="phone">Telefon raqami</label>
+      <input placeholder="" id="phone" name="phone" type="phone" />
+      <label for="email">Email</label>
+      <input placeholder="" id="email" name="email" type="email" />
+      <label for="location">Lokatsiya</label>
+      <input placeholder="" type="email" />
+      <label for="location">Fikir mulohoza.</label>
+      <input class="aaa" placeholder="" type="Fikir mulohoza." />
+    </div>
+    <button style="margin-top:6%;" class="sign">Yuborish</button>
+  </form>
+  <div class="social-message">
+    <div class="line"></div>
+    <p class="message">   Bizning soat kompaniyamiz ko'p yillik boy an'analar, yuksak mahoratga ega.</p>
+    <div class="line"></div>
+  </div>
+</div>
+
+</div>
+
+<div>
+  <img src="../images/aloqa vaqt lokation.svg" alt="" width="452">
+  <img src="../images/aloqa vaqt lokation.svg" alt="" width="452">
+</div>
+        </div>
+      </div>
+    </section>
+</main>
+
+    <footer class="py-[90px] bg-[#0E0E0C]">
+      <div class="max-w-[1200px] mx-auto w-full px-[30px]">
+        <div
+          class="flex p-[20px] items-start gap-[30px] justify-between max-[858px]:flex-col max-[858px]:p-[10px] max-[858px]:gap-[30px]"
+        >
+          <div class="max-[858px]:mx-auto">
+            <img class="pb-[23px]" src="../images/vaqt.svg" alt="" />
+            <p class="text-[#9A8F7E] italic pb-[23px] text-[16px]">
+              "Har bir soniya — san'at asari"
+            </p>
+            <div class="flex items-center gap-[20px]">
+              <a href=""><img src="../images/l2.png" alt="" /></a>
+              <a href=""><img src="../images/l3.png" alt="" /></a>
+              <a href=""><img src="../images/l4.png" alt="" /></a>
+            </div>
+          </div>
+
+          <div
+            class="flex items-start gap-[200px] mx-auto max-[858px]:gap-[46px]"
+          >
+            <div class="max-[858px]:mx-auto">
+              <h2 class="text-[16px] text-[#EBC166] pb-[24px]">MENYU</h2>
+
+              <a href="../index.html">
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">Bosh sahifa</p>
+              </a>
+
+              <a href="">
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">Katalog</p>
+              </a>
+
+              <a href="">
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                  Biz haqimizda
+                </p>
+              </a>
+
+              <a href="">
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">Aloqa</p>
+              </a>
+            </div>
+
+            <div class="max-[858px]:mx-auto">
+              <h2 class="text-[16px] text-[#EBC166] pb-[24px]">YORDAM</h2>
+
+              <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                Yetkazib berish
+              </p>
+
+              <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                To'lov usullari
+              </p>
+
+              <p class="text-[13px] pb-[10px] text-[#9A8F7E]">Kafolat</p>
+
+              <p class="text-[13px] pb-[10px] text-[#9A8F7E]">Savollar</p>
+            </div>
+
+            <div class="max-[858px]:hidden">
+              <h2 class="text-[16px] text-[#EBC166] pb-[24px]">KONTAKTLAR</h2>
+
+              <div class="flex items-start gap-[15px]">
+                <img class="mt-[4px]" src="../images/tel.svg" alt="" />
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                  +998 71 200 00 00
+                </p>
+              </div>
+
+              <div class="flex items-start gap-[15px]">
+                <img class="mt-[4px]" src="../images/Icon.png" alt="" />
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                  Toshkent sh., Amir Temur <br />
+                  ko'chasi, 12-uy
+                </p>
+              </div>
+
+              <div class="flex items-start gap-[15px]">
+                <img class="mt-[4px]" src="../images/soat.svg" alt="" />
+                <p class="text-[13px] pb-[10px] text-[#9A8F7E]">
+                  10:00 - 21:00 (Har kuni)
+                </p>
+              </div>
+
+              <div class="flex items-center gap-[20px] mt-[20px]">
+                <a href="https://payme.uz/home/main"
+                  ><button
+                    class="p-[5px] rounded-[4px] w-[58px] border border-[#1A1A1A] text-[#9A8F7E]"
+                  >
+                    Payme
+                  </button></a
+                >
+                <a href="https://click.uz/ru"
+                  ><button
+                    class="p-[5px] rounded-[4px] w-[58px] border border-[#1A1A1A] text-[#9A8F7E]"
+                  >
+                    Click
+                  </button></a
+                >
+                <a href="https://click.uz/ru"
+                  ><button
+                    class="p-[5px] rounded-[4px] w-[58px] border border-[#1A1A1A] text-[#9A8F7E]"
+                  >
+                    Visa
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
+    <script
+      class="mx-auto"
+      src="https://cdn.jotfor.ms/agent/embedjs/019f8fb72f98700089808879a7f42426c159/embed.js"
+    ></script>
+
+    <script src="./scrip.js"></script>
+  </body>
 </html>
