@@ -21,7 +21,7 @@
 }
 
 .login {
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 background-color: rgba(128, 128, 128, 0.311);
 }
@@ -833,3 +833,4 @@ button {
     font-size: 0.75rem;
   }
 }
+

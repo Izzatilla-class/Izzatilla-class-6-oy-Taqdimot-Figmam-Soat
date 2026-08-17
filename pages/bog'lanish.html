@@ -549,79 +549,67 @@
           <div
             class="mb-4 mt-[20px] border-b border-[#C9A24B33] overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           >
-            <ul
-              class="flex flex-wrap max-[640px]:flex-nowrap whitespace-nowrap -mb-px text-sm font-medium text-center"
-              id="default-styled-tab"
-              data-tabs-toggle="#default-styled-tab-content"
-              data-tabs-active-classes="text-purple hover:text-purple border-purple"
-              data-tabs-inactive-classes="dark:border-transparent text-body hover:text-fg-brand border-default hover:border-brand"
-              role="tablist"
-            >
-              <li
-                class="me-2 text-[16px] max-[640px]:text-[13px]"
-                role="presentation"
-              >
-                <button
-                  class="inline-block p-4 max-[640px]:p-2.5 rounded-base cursor-pointer "
-                  id="profile-styled-tab"
-                  data-tabs-target="#styled-profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="profile"
-                  aria-selected="false"
-                >
-                  TAVSIF
-                </button>
-              </li>
-              <li
-                class="me-2 text-[16px] max-[640px]:text-[13px]"
-                role="presentation"
-              >
-                <button
-                  class="inline-block p-4 max-[640px]:p-2.5 rounded-base hover:text-fg-brand hover:border-brand cursor-pointer"
-                  id="dashboard-styled-tab"
-                  data-tabs-target="#styled-dashboard"
-                  type="button"
-                  role="tab"
-                  aria-controls="dashboard"
-                  aria-selected="false"
-                >
-                  XUSUSIYATLAR
-                </button>
-              </li>
-              <li
-                class="me-2 text-[16px] max-[640px]:text-[13px]"
-                role="presentation"
-              >
-                <button
-                  class="inline-block p-4 max-[640px]:p-2.5 rounded-base hover:text-fg-brand hover:border-brand cursor-pointer"
-                  id="settings-styled-tab"
-                  data-tabs-target="#styled-settings"
-                  type="button"
-                  role="tab"
-                  aria-controls="settings"
-                  aria-selected="false"
-                >
-                  SHARHLAR (214)
-                </button>
-              </li>
-              <li
-                class="text-[16px] max-[640px]:text-[13px]"
-                role="presentation"
-              >
-                <button
-                  class="inline-block p-4 max-[640px]:p-2.5 rounded-base hover:text-fg-brand hover:border-brand cursor-pointer"
-                  id="contacts-styled-tab"
-                  data-tabs-target="#styled-contacts"
-                  type="button"
-                  role="tab"
-                  aria-controls="contacts"
-                  aria-selected="false"
-                >
-                  YETKAZIB BERISH
-                </button>
-              </li>
-            </ul>
+           <ul
+  class="flex flex-wrap max-[640px]:flex-nowrap whitespace-nowrap -mb-px text-sm font-medium text-center border-b border-default"
+  id="default-styled-tab"
+  data-tabs-toggle="#default-styled-tab-content"
+  data-tabs-active-classes="text-purple hover:text-purple border-purple border-b-2"
+  data-tabs-inactive-classes="dark:border-transparent text-body hover:text-fg-brand border-transparent hover:border-brand"
+  role="tablist"
+>
+  <li class="me-2 text-[16px] max-[640px]:text-[13px]" role="presentation">
+    <button
+      class="inline-block p-4 max-[640px]:p-2.5 rounded-base cursor-pointer"
+      id="profile-styled-tab"
+      data-tabs-target="#styled-profile"
+      type="button"
+      role="tab"
+      aria-controls="profile"
+      aria-selected="true"
+    >
+      TAVSIF
+    </button>
+  </li>
+  <li class="me-2 text-[16px] max-[640px]:text-[13px]" role="presentation">
+    <button
+      class="inline-block p-4 max-[640px]:p-2.5 rounded-base cursor-pointer"
+      id="dashboard-styled-tab"
+      data-tabs-target="#styled-dashboard"
+      type="button"
+      role="tab"
+      aria-controls="dashboard"
+      aria-selected="false"
+    >
+      XUSUSIYATLAR
+    </button>
+  </li>
+  <li class="me-2 text-[16px] max-[640px]:text-[13px]" role="presentation">
+    <button
+      class="inline-block p-4 max-[640px]:p-2.5 rounded-base cursor-pointer"
+      id="settings-styled-tab"
+      data-tabs-target="#styled-settings"
+      type="button"
+      role="tab"
+      aria-controls="settings"
+      aria-selected="false"
+    >
+      SHARHLAR (214)
+    </button>
+  </li>
+  <li class="text-[16px] max-[640px]:text-[13px]" role="presentation">
+    <button
+      class="inline-block p-4 max-[640px]:p-2.5 rounded-base cursor-pointer"
+      id="contacts-styled-tab"
+      data-tabs-target="#styled-contacts"
+      type="button"
+      role="tab"
+      aria-controls="contacts"
+      aria-selected="false"
+    >
+      YETKAZIB BERISH
+    </button>
+  </li>
+</ul>
           </div>
 
           <div id="default-styled-tab-content">
@@ -1032,7 +1020,7 @@
                   aria-expanded="true"
                   aria-controls="accordion-card-body-1"
                 >
-                  <span class="text-[white] max-[700px]:text-[13px]"
+                  <span class="text-[white] max-[700px]:text-[11px]"
                     >Soat originalligini qanday tekshirsam bo'ladi?</span
                   >
                   <svg
@@ -1061,7 +1049,7 @@
                 aria-labelledby="accordion-card-heading-1"
               >
                 <div class="p-4 md:p-5">
-                  <p class="mb-2 text-[#A1A1A1]">
+                  <p class="mb-2 text-[#A1A1A1] max-[400px]:text-[13px]">
                     Har bir VAQT do'konidan xarid qilingan Rolex soati bilan
                     birga xalqaro kafolat kartasi taqdim etiladi. Kartadagi
                     seriya raqami soat korpusidagi bilan mos kelishi kerak.
@@ -1078,7 +1066,7 @@
                   aria-expanded="false"
                   aria-controls="accordion-card-body-2"
                 >
-                  <span class="text-[white] max-[700px]:text-[13px]"
+                  <span class="text-[white] max-[700px]:text-[11px]"
                     >To'lov turlari qanday?</span
                   >
                   <svg
@@ -1107,7 +1095,7 @@
                 aria-labelledby="accordion-card-heading-2"
               >
                 <div class="p-4 md:p-5">
-                  <p class="mb-2 text-[#a1a1a1]">
+                  <p class="mb-2 text-[#a1a1a1] max-[400px]:text-[13px]">
                     To'lovlarni naqd pul, bank kartalari (Uzcard, Humo, Visa,
                     Mastercard) va elektron to'lov tizimlari orqali amalga
                     oshirishingiz mumkin. Shuningdek, bizda xaridingiz uchun
@@ -1125,7 +1113,7 @@
                   aria-expanded="false"
                   aria-controls="accordion-card-body-3"
                 >
-                  <span class="text-[white] max-[700px]:text-[13px]">
+                  <span class="text-[white] max-[700px]:text-[11px]">
                     Viloyatlarga yetkazib berish bormi?
                   </span>
                   <svg
@@ -1154,7 +1142,7 @@
                 aria-labelledby="accordion-card-heading-3"
               >
                 <div class="p-4 md:p-5">
-                  <p class="mb-2 text-[#a1a1a1]">
+                  <p class="mb-2 text-[#a1a1a1] max-[400px]:text-[13px]">
                     Ha, respublikamizning barcha viloyatlariga yetkazib berish
                     xizmati mavjud. Buyurtmangiz kurerlik xizmati orqali 1-3 kun
                     ichida manzilingizga xavfsiz yetkaziladi. Shahar va tuman
